@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elena Pavlova](https://up.htmlacademy.ru/adaptive/13/user/54237).
-* Наставник: `Неизвестно`.
+* Наставник: `Кекс` / <img src="https://assets.htmlacademy.ru/img/icons/cat.v2.svg" width="130" height="110" alt="Кекс">
 
 ---
 
