@@ -1,0 +1,18 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  height: auto;
+  min-height: 100vh;
+  font-family: $ffam-base;
+  font-family: $ffam-cond;
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-text;
+  background-color: $color-light;
+  background-color: yellow;
+  box-sizing: border-box;
+}
+
+
