@@ -1,0 +1,56 @@
+.proposition {
+
+}
+
+.proposition__inner {
+  position: relative;
+  padding: 0 $indent $indent;
+}
+
+.proposition__content {
+  min-height: 308px;
+  margin-bottom: 137px;
+  margin-left: -$indent;
+  margin-right: -$indent;
+  padding-top: 30px;
+  background: $color-main url("../img/index-background-mobile@1x.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.proposition__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $color-light;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  font-family: $ffam-cond;
+  text-align: center;
+}
+
+.proposition__slogan {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: $color-light;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: $ffam-cond;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.proposition__img {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 280px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+}
+
+.proposition__btn {
+  min-width: 100%;
+}

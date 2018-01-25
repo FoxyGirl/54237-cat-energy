@@ -1,0 +1,33 @@
+.socials {
+  @include ul-clear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  font-size: 0;
+  text-align: center;
+  border: 1px solid $color-gray;
+  border-right: none;
+  border-left: none;
+}
+
+.socials__item {
+  margin: 10px;
+}
+
+.socials__link {
+  display: block;
+  padding: 10px 20px;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-main;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+

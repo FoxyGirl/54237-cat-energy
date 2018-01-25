@@ -1,0 +1,20 @@
+.example {
+  background-color: $color-light-gray;
+}
+
+.example__inner {
+  padding: 10px $indent $indent;;
+}
+
+.example__text {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.example__result {
+  margin-bottom: 20px;
+}
+
+.example__slider {
+  margin-bottom: 30px;
+}

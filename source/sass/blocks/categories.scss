@@ -1,0 +1,121 @@
+.categories {
+
+}
+
+.categories__inner {
+  padding: 0 $indent $indent;
+}
+
+.categories__list {
+  @include ul-clear;
+}
+
+.categories__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 25px;
+  background-color: $color-light-gray;
+}
+
+.categories__title {
+  position: relative;
+  margin: 0;
+  padding-left: 70px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: $ffam-cond;
+  text-transform: uppercase;
+  color: $color-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: $color-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 70px;
+    height: 70px;
+    background: transparent url("../img/icon-cat-slim.svg") center no-repeat;
+    background-size: contain;
+  }
+
+  &--slim {
+    &::after {
+      left: 10px;
+      width: 35px;
+      height: 50px;
+      background-image: url("../img/icon-cat-slim.svg");
+    }
+  }
+
+  &--pro {
+    &::after {
+      left: -10px;
+      top: 5px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/icon-cat-pro.svg");
+    }
+  }
+}
+
+.categories__text {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: $ffam-base;
+  border-bottom: 1px solid $color-gray;
+}
+
+.categories__link {
+  display: inline-block;
+  position: relative;
+  padding: 15px 10px 0 0;
+  color: $color-dark;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $ffam-cond;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 11px;
+    left: 100%;
+    bottom: 6px;
+    background: transparent url("../img/icon-right-arrow-long.svg") -9px 0 no-repeat;
+    background-size: 100% 100%;
+    transition: background-position 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-position: 0 0;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    //&::after {
+    //  background-position: 0 0;
+    //}
+  }
+}
