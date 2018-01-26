@@ -1,0 +1,40 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  max-width: 280px;
+  padding: 10px 25px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: $ffam-cond;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-light;
+  background-color: $color-main;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    color: rgba($color-light, 0.3);
+  }
+
+  &--to-all {
+    color: $color-dark;
+    background-color: $color-light-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $color-gray;
+    }
+
+    &:active {
+      color: rgba($color-dark, 0.3);
+    }
+  }
+
+}

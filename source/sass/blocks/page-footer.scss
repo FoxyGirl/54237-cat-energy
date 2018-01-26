@@ -1,0 +1,18 @@
+.page-footer {
+  background-color: $color-light;
+}
+
+.page-footer__inner {
+  padding: 0 $indent;
+  background-color: $color-light-gray;
+}
+
+.page-footer__map {
+  width: 100%;
+  height: 362px;
+  background-color: $color-gray;
+}
+
+.page-footer__logo {
+  height: 95px;
+}
