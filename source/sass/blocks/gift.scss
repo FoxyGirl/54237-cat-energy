@@ -1,0 +1,25 @@
+.gift {
+  position: relative;
+  height: 289px;
+  background-color: $color-main;
+  background-image:
+    url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center 64px, center center;
+  background-repeat: no-repeat;
+  background-size: 55px 60px, cover;
+}
+
+.gift__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  width: 160px;
+  margin: auto;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: $ffam-base;
+  text-align: center;
+  color: $color-light;
+}
