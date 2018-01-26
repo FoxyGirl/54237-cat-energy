@@ -1,8 +1,7 @@
 .btn {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   box-sizing: border-box;
-  margin: 0;
+  max-width: 280px;
   padding: 10px 25px;
   font-weight: 400;
   font-size: 14px;
@@ -22,6 +21,20 @@
 
   &:active {
     color: rgba($color-light, 0.3);
+  }
+
+  &--to-all {
+    color: $color-dark;
+    background-color: $color-light-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $color-gray;
+    }
+
+    &:active {
+      color: rgba($color-dark, 0.3);
+    }
   }
 
 }

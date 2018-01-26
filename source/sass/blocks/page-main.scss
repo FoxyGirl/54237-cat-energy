@@ -1,8 +1,29 @@
 .page-main__title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   font-weight: 400;
   font-size: 36px;
   font-family: $ffam-cond;
   color: $color-dark;
+}
+
+.page-main__subtitle {
+  margin-right: -20px;
+  padding: 25px 0;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: $ffam-cond;
+  color: $color-dark;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: -22px;
+    height: 4px;
+    width: 100%;
+    margin-right: -100%;
+    background-color: $color-main;
+  }
 }
