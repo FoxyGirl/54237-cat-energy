@@ -3,7 +3,8 @@
 }
 
 .catalog__inner {
-  padding: 0 $indent $indent;
+  @include container;
+  padding-bottom: $indent;
 }
 
 .catalog__title {
