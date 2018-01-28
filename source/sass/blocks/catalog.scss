@@ -15,3 +15,11 @@
 .catalog__subtitle {
 
 }
+
+@include respond(desktop-all) {
+  .catalog__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+}

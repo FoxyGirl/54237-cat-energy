@@ -23,3 +23,11 @@
   text-align: center;
   color: $color-light;
 }
+
+@include respond(desktop-all) {
+  .gift {
+    width: 245px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}

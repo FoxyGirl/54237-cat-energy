@@ -20,7 +20,6 @@
 @include respond(desktop-all) {
   .page-header {
     position: relative;
-    min-height: 698px;
 
     &--promo {
       &::before {
@@ -44,14 +43,5 @@
         }
       }
     }
-    //
-    //max-height: 698px;
-    //background-color: $color-light;
-    //background-image:
-    //  url("../img/index-background-mobile@1x.jpg"),
-    //  linear-gradient(to right, transparent 0%, transparent 48%, $color-main 48%, $color-main 100%);
-    //background-repeat: no-repeat;
-    //background-position: right 0, right 0;
-    //background-size: 48% auto, 90% auto;
   }
 }
