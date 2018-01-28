@@ -1,5 +1,6 @@
 .page-main__title {
   margin: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 36px;
   font-family: $ffam-cond;
@@ -25,5 +26,17 @@
     width: 100%;
     margin-right: -100%;
     background-color: $color-main;
+  }
+}
+
+@include respond(tablet) {
+  .page-main__title {
+    margin-bottom: 55px;
+  }
+}
+
+@include respond(desktop-all) {
+  .page-main__title {
+    margin-bottom: 60px;
   }
 }

@@ -3,7 +3,8 @@
 }
 
 .advantages__inner {
-  padding: 10px $indent $indent;
+  @include container;
+  padding-bottom: $indent;
 }
 
 .advantages__title {
@@ -34,4 +35,63 @@
 
 .advantages__text {
   font-size: 14px;
+}
+
+@include respond(tablet) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    counter-reset: myCounter;
+  }
+
+  .advantages__item {
+    display: block;
+    position: relative;
+    width: 245px;
+    min-height: 231px;
+    margin-right: 150px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 0;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $color-light-gray;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 0.7;
+      font-family: $ffam-cond;
+    }
+  }
+
+  .advantages__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .advantages__img {
+    margin-bottom: 40px;
+  }
+}
+
+@include respond(desktop-all) {
+  .advantages__list {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+
+  .advantages__item {
+    margin: 0 40px;
+
+    &:nth-child(2n) {
+      margin-right: 40px;
+    }
+  }
 }

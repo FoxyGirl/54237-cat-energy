@@ -137,3 +137,33 @@
     }
   }
 }
+
+@include respond(tablet) {
+  .main-nav {
+    width: 62%;
+    flex-grow: 1;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .main-nav__link {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+}

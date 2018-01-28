@@ -17,5 +17,34 @@
 
 .contacts__address {
   font-style: normal;
+  font-size: 14px;
   line-height: 1.5;
+  font-family: $ffam-base;
+  color: $color-text;
+}
+
+@include respond(desktop-all) {
+  .contacts {
+    width: 570px;
+    background-color: $color-light;
+  }
+
+  .contacts__inner {
+    padding: 60px 70px;
+  }
+
+  .contacts__slogan {
+    font-size: 20px;
+    margin-right: 80px;
+  }
+
+  .contacts__address {
+    width: 170px;
+    font-size: 16px;
+
+    br {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
 }

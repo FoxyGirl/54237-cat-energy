@@ -3,11 +3,14 @@
 }
 
 .example__inner {
-  padding: 10px $indent $indent;;
+  @include container;
+  padding-top: 30px;
+  padding-bottom: $indent;
 }
 
 .example__text {
-  margin: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 14px;
 }
 
@@ -17,4 +20,33 @@
 
 .example__slider {
   margin-bottom: 30px;
+}
+
+@include respond(tablet) {
+  .example {
+    background-color: $color-light;
+    background-image: linear-gradient(to top,
+      $color-light-gray 0, $color-light-gray 465px,
+      $color-light 465px, $color-light 100%);
+  }
+}
+
+@include respond(desktop-all) {
+  .example__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__content {
+    width: 435px;
+    flex-shrink: 0;
+  }
+
+  .example__slider {
+    width: 50%;
+  }
+
+  .example__text {
+    margin-bottom: 60px;
+  }
 }

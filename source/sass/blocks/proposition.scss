@@ -1,10 +1,9 @@
 .proposition {
-
+  width: 100%;
 }
 
 .proposition__inner {
-  position: relative;
-  padding: 0 $indent $indent;
+  @include container;
 }
 
 .proposition__content {
@@ -52,5 +51,68 @@
 }
 
 .proposition__btn {
-  margin: 0 auto;
+  margin: 135px auto 20px;
+}
+
+@include respond(tablet) {
+  .proposition__inner {
+    min-height: 810px;
+  }
+
+  .proposition__content {
+    width: 425px;
+    min-height: auto;
+    margin-left: 95px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    background: none;
+  }
+
+  .proposition__title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-align: left;
+    color: $color-dark;
+  }
+
+  .proposition__slogan {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    text-align: left;
+    color: $color-dark;
+  }
+
+  .proposition__img {
+    width: 565px;
+    height: 580px;
+    top: 225px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .proposition__btn {
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    width: 250px;
+    margin: 0;
+    margin-left: 95px;
+  }
+}
+
+@include respond(desktop-all) {
+  .proposition__inner {
+    min-height: 710px;
+    margin-bottom: 40px;
+  }
+
+  .proposition__img {
+    top: 0;
+    left: 10%;
+    width: 485px;
+    height: 475px;
+  }
 }

@@ -67,3 +67,58 @@
     left: calc(100% - 40px);
   }
 }
+
+@include respond(tablet) {
+  .slider__content {
+    //min-height: 520px;
+    img {
+      height: 520px;
+    }
+  }
+
+  .slider__controls {
+    width: 570px;
+  }
+
+  .slider__control {
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .slider__bar {
+    flex-shrink: 0;
+    width: 430px;
+    height: 7px;
+    background-color: #dcdcdc;
+
+    span {
+      width: 35px;
+      height: 35px;
+      background-color: red;
+
+      border-radius: 50%;
+      border: 2px solid $color-gray;
+      background-color: $color-light;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        @include zero-centered;
+        border-radius: 50%;
+        background-color: $color-main;
+      }
+    }
+  }
+}
+
+@include respond(desktop-all) {
+  .slider__content {
+    img:last-child {
+      display: none;
+    }
+  }
+}

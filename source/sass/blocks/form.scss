@@ -110,10 +110,9 @@
       &::after {
         content: "";
         position: absolute;
-        left: 9px;
-        top: 12px;
         width: 12px;
         height: 12px;
+        @include zero-centered;
         border-radius: 50%;
         background-color: $color-main;
       }

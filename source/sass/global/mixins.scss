@@ -48,3 +48,22 @@
   left: 0;
   margin: auto;
 }
+
+@mixin container() {
+  position: relative;
+  margin: 0 auto;
+  padding-left: $indent;
+  padding-right: $indent;
+  outline: 1px solid red;
+
+  @include respond(tablet) {
+    padding-left: 1.5 * $indent;
+    padding-right: 1.5 * $indent;
+  }
+
+  @include respond(desktop-all) {
+    max-width: 1300px;
+    padding-left: 2 * $indent;
+    padding-right: 2 * $indent;
+  }
+}
