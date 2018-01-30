@@ -1,5 +1,5 @@
-$ffam-base: Arial, Helvetica, Tahoma, sans-serif;
-$ffam-cond: 'Oswald', Impact, sans-serif;
+$ffam-base: "Arial", "Helvetica", "Tahoma", sans-serif;
+$ffam-cond: "Oswald", "Impact", sans-serif;
 
 $color-main: #68b738;
 $color-secondary: #5eaa2f;
@@ -11,3 +11,10 @@ $color-light-gray: #f2f2f2;
 
 $indent: 20px;
 $brd-rad: 7px;
+
+$bp-xsmall: 320px; // Tiny-screen and old devices;
+//$bp-small: 400px; // Mobiles and portrait-view tablets
+//$bp-sm-middle: 600px; // Mobiles and portrait-view tablets
+$bp-middle: 768px; // Normal mobile devices and small tablets;
+// $bp-large: 992px; // Desktop starts here
+$bp-xlarge: 1220px + 2 * 40px; // Desktop seamless transition

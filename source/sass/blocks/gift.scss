@@ -23,3 +23,11 @@
   text-align: center;
   color: $color-light;
 }
+
+@media (min-width: $bp-xlarge) {
+  .gift {
+    width: 245px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}

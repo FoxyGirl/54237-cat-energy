@@ -1,9 +1,5 @@
-.choice-program {
-
-}
-
 .choice-program__inner {
-  padding: 0 $indent;
+  @include container;
 }
 
 .choice-program__title {

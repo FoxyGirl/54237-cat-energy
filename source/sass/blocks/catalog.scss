@@ -1,9 +1,6 @@
-.catalog {
-
-}
-
 .catalog__inner {
-  padding: 0 $indent $indent;
+  @include container;
+  padding-bottom: $indent;
 }
 
 .catalog__title {
@@ -11,6 +8,10 @@
   padding-bottom: 20px;
 }
 
-.catalog__subtitle {
-
+@media (min-width: $bp-xlarge) {
+  .catalog__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
 }

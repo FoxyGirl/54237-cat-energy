@@ -13,7 +13,6 @@
 }
 
 @mixin placeholder-color($color: red, $opacity: 1) {
-
   &::-webkit-input-placeholder {
     color: $color;
     opacity: $opacity;
@@ -47,4 +46,22 @@
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+@mixin container() {
+  position: relative;
+  margin: 0 auto;
+  padding-left: $indent;
+  padding-right: $indent;
+
+  @media (min-width: $bp-middle) {
+    padding-left: 1.5 * $indent;
+    padding-right: 1.5 * $indent;
+  }
+
+  @media (min-width: $bp-xlarge) {
+    max-width: 1300px;
+    padding-left: 2 * $indent;
+    padding-right: 2 * $indent;
+  }
 }

@@ -3,7 +3,7 @@
   font-size: 14px;
   line-height: 1.3;
   font-family: $ffam-cond;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 
 .form__text {
@@ -25,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 7px 0;
+  text-transform: uppercase;
 }
 
 .form__label {
@@ -59,6 +60,7 @@
   text-transform: uppercase;
   outline: none;
   border: 1px solid #e7e7e7;
+
   @include placeholder-color(#444444);
 
   &:hover {
@@ -91,7 +93,6 @@
     top: 0;
 
     & + span {
-
       &::before {
         content: "";
         display: block;
@@ -161,4 +162,97 @@
   font-family: $ffam-base;
   text-align: center;
   text-transform: none;
+}
+
+
+@media (min-width: $bp-middle) {
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+  }
+
+  .form__subtitle {
+    br {
+      display: none;
+    }
+  }
+
+  .form__section {
+    border: none;
+
+    &--right-out {
+      position: relative;
+      padding-left: 30px;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 150%;
+        height: 100%;
+        border: 1px solid $color-gray;
+      }
+    }
+
+    &--addition {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .form__item {
+        width: 45%;
+      }
+    }
+  }
+
+  .form__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .form__input {
+    font-size: 20px;
+  }
+
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $bp-xlarge) {
+  .form__up-content {
+    display: flex;
+    justify-content: space-between;
+
+    .form__section {
+      width: 45%;
+
+      &--right-out {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .form__section {
+    &--contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .form__item {
+        width: 45%;
+      }
+    }
+
+    &--addition {
+      .form__item {
+        width: 22%;
+      }
+    }
+  }
 }
