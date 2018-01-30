@@ -31,7 +31,7 @@
   }
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .socials {
     border: none;
   }

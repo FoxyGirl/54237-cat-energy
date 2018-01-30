@@ -20,7 +20,7 @@
   height: 95px;
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .page-footer__bottom {
     .page-footer__inner {
       display: flex;
@@ -43,7 +43,7 @@
   }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .page-footer__contacts {
     position: absolute;
     top: 90px;

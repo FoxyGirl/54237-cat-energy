@@ -1,6 +1,7 @@
 .result__list {
   display: flex;
   justify-content: space-between;
+
   @include ul-clear;
   padding-bottom: 35px;
 }
@@ -52,7 +53,7 @@
   color: $color-dark;
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .result {
     display: flex;
     justify-content: space-between;
@@ -86,7 +87,7 @@
   }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .result {
     display: block;
   }

@@ -39,7 +39,7 @@
   }
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .copyright__link {
     margin-right: 20px;
   }

@@ -27,7 +27,7 @@
   }
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .logo {
     justify-content: space-between;
     left: 0;
@@ -52,7 +52,7 @@
   }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .logo {
     width: 205px;
 

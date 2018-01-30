@@ -39,7 +39,7 @@
   margin: 0 auto;
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .addition {
     display: flex;
     flex-direction: column;

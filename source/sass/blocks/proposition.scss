@@ -55,7 +55,7 @@
   font-size: 20px;
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .proposition__inner {
     min-height: 810px;
   }
@@ -104,7 +104,7 @@
   }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .proposition__inner {
     min-height: 710px;
     margin-bottom: 40px;

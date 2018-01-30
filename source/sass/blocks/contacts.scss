@@ -23,7 +23,7 @@
   color: $color-text;
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .contacts {
     width: 570px;
     background-color: $color-light;

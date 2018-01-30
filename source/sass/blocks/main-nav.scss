@@ -138,7 +138,7 @@
   }
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .main-nav {
     width: 62%;
     flex-grow: 1;

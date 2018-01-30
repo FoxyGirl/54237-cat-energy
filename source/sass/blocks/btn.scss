@@ -38,7 +38,7 @@
   }
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .btn {
     font-size: 16px;
   }

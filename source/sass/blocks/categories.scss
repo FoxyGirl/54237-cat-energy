@@ -1,7 +1,3 @@
-.categories {
-
-}
-
 .categories__inner {
   @include container;
   padding-bottom: $indent;
@@ -118,7 +114,7 @@
   }
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .categories__item {
     display: block;
     padding: 60px 50px;
@@ -140,16 +136,14 @@
     font-size: 16px;
     border-bottom: none;
   }
-
-  .categories__link {
-  }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .categories__inner {
     padding-left: 0;
     padding-right: 0;
   }
+
   .categories__list {
     display: flex;
   }

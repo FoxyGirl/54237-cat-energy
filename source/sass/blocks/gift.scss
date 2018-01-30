@@ -24,7 +24,7 @@
   color: $color-light;
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .gift {
     width: 245px;
     height: auto;

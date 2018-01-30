@@ -1,7 +1,3 @@
-.catalog {
-
-}
-
 .catalog__inner {
   @include container;
   padding-bottom: $indent;
@@ -12,11 +8,7 @@
   padding-bottom: 20px;
 }
 
-.catalog__subtitle {
-
-}
-
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .catalog__bottom {
     display: flex;
     justify-content: space-between;

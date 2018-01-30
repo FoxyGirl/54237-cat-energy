@@ -1,13 +1,6 @@
-.advantages {
-
-}
-
 .advantages__inner {
   @include container;
   padding-bottom: $indent;
-}
-
-.advantages__title {
 }
 
 .advantages__list {
@@ -37,7 +30,7 @@
   font-size: 14px;
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .advantages__list {
     display: flex;
     justify-content: space-between;
@@ -81,7 +74,7 @@
   }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .advantages__list {
     margin-right: -40px;
     margin-left: -40px;

@@ -22,16 +22,14 @@
   margin-bottom: 30px;
 }
 
-@include respond(tablet) {
+@media (min-width: $bp-middle) {
   .example {
     background-color: $color-light;
-    background-image: linear-gradient(to top,
-      $color-light-gray 0, $color-light-gray 465px,
-      $color-light 465px, $color-light 100%);
+    background-image: linear-gradient(to top, $color-light-gray 0, $color-light-gray 465px, $color-light 465px, $color-light 100%);
   }
 }
 
-@include respond(desktop-all) {
+@media (min-width: $bp-xlarge) {
   .example__inner {
     display: flex;
     justify-content: space-between;
