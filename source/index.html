@@ -16,11 +16,11 @@
             <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
           </a>
 
-          <nav class="main-nav">
-            <button class="main-nav__toggler  " type="button" id="navToggler">
+          <nav class="main-nav  main-nav--no-js" id="mainNav">
+            <button class="main-nav__toggler" type="button" id="navToggler">
               <span>Открыть меню</span>
             </button>
-            <ul class="main-nav__list" id="mainNav">
+            <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link  main-nav__link--active">Главная</a>
               </li>
@@ -274,5 +274,25 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      ;(function() {
+        'use strict';
+
+        var navToggler = document.getElementById('navToggler');
+        var mainNav = document.getElementById('mainNav');
+
+        if (!navToggler || !mainNav) { return };
+
+        if (mainNav.classList.contains('main-nav--no-js')) {
+          mainNav.classList.remove('main-nav--no-js');
+        }
+
+        navToggler.addEventListener('click', function() {
+          mainNav.classList.toggle('main-nav--opened');
+          navToggler.querySelector('span').innerHTML = (mainNav.classList.contains('main-nav--opened')) ? 'Закрыть меню' : 'Открыть меню';
+        });
+      })();
+    </script>
   </body>
 </html>
