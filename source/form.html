@@ -6,6 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Форма / Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/preview/cat-energy-form-mobile.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/preview/cat-energy-form-tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/preview/cat-energy-form-desktop.jpg" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="js/styles.css">
+    <script src="js/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <div class="main-wrap">
