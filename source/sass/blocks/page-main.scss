@@ -1,6 +1,10 @@
 .page-main__title {
   margin: 0;
   margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: $indent;
+  padding-right: $indent;
   font-weight: 400;
   font-size: 36px;
   font-family: $ffam-cond;
@@ -8,23 +12,31 @@
 }
 
 .page-main__subtitle {
-  margin-right: -20px;
-  padding: 25px 0;
+  position: relative;
+  padding: 25px $indent 25px 0;
   font-weight: 400;
   font-size: 24px;
   font-family: $ffam-cond;
   color: $color-dark;
-  overflow: hidden;
+  //overflow: hidden;
 
-  &::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
+  span {
     position: relative;
-    right: -22px;
+    padding-right: 22px;
+    z-index: 1;
+    background-color: $color-light;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    right: 50%;
     height: 4px;
-    width: 100%;
-    margin-right: -100%;
+    width: 100vw;
+    margin-right: -50vw;
+    margin-left: -30vw;
     background-color: $color-main;
   }
 }
@@ -32,12 +44,31 @@
 @media (min-width: $bp-middle) {
   .page-main__title {
     margin-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 60px;
+  }
+
+  .page-main__subtitle {
+    padding-top: 10px;
+    font-size: 36px;
+
+    span {
+      padding-left: 22px;
+    }
+
+    &::before {
+      margin-left: -50vw;
+    }
   }
 }
 
 @media (min-width: $bp-xlarge) {
   .page-main__title {
     margin-bottom: 60px;
+  }
+
+  .page-main__subtitle {
+    padding-left: 30px;
   }
 }

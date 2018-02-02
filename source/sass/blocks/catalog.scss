@@ -1,3 +1,7 @@
+.catalog {
+  overflow: hidden;  
+}
+
 .catalog__inner {
   @include container;
   padding-bottom: $indent;

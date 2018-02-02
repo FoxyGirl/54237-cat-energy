@@ -1,3 +1,11 @@
+.page-header {
+  border-bottom: 1px solid $color-gray;
+
+  &--promo {
+    border-bottom: none;
+  }
+}
+
 .page-header__inner {
   @include container;
   padding-left: 0;
@@ -5,6 +13,10 @@
 }
 
 @media (min-width: $bp-middle) {
+  .page-header {
+    border-bottom: none;
+  }
+
   .page-header__inner {
     display: flex;
     justify-content: space-between;
