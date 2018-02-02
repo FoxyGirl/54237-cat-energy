@@ -16,8 +16,8 @@
             <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
           </a>
 
-          <nav class="main-nav">
-            <button class="main-nav__toggler  " type="button" id="navToggler">
+          <nav class="main-nav  main-nav--no-js" id="mainNav">
+            <button class="main-nav__toggler" type="button" id="navToggler">
               <span>Открыть меню</span>
             </button>
             <ul class="main-nav__list" id="mainNav">
@@ -85,7 +85,7 @@
                 </div>
               </div>
 
-              <h2 class="form__subtitle  page-main__subtitle">Контактные данные <br>(владельца кота)</h2>
+              <h2 class="form__subtitle  page-main__subtitle"><span>Контактные данные <br>(владельца кота)</span></h2>
               <div class="form__section  form__section--contact">
                 <div class="form__item">
                   <label class="form__label  form__label--required" for="email">E-mail:</label>
@@ -96,13 +96,13 @@
                   <input class="form__input  form__input--tel" type="tel" placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
                 </div>
               </div>
-              <h2 class="form__subtitle  page-main__subtitle">Комментарий</h2>
+              <h2 class="form__subtitle  page-main__subtitle"><span>Комментарий</span></h2>
               <div class="form__section">
                 <div class="form__item">
                   <textarea class="form__input  form__input--textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
                 </div>
               </div>
-              <h2 class="form__subtitle  page-main__subtitle">Дополнительно</h2>
+              <h2 class="form__subtitle  page-main__subtitle"><span>Дополнительно</span></h2>
               <div class="form__section  form__section--addition">
                 <div class="form__item">
                   <label class="form__label  form__label--checkbox">
@@ -245,5 +245,24 @@
       </div>
     </footer>
 
+    <script>
+      ;(function() {
+        'use strict';
+
+        var navToggler = document.getElementById('navToggler');
+        var mainNav = document.getElementById('mainNav');
+
+        if (!navToggler || !mainNav) { return };
+
+        if (mainNav.classList.contains('main-nav--no-js')) {
+          mainNav.classList.remove('main-nav--no-js');
+        }
+
+        navToggler.addEventListener('click', function() {
+          mainNav.classList.toggle('main-nav--opened');
+          navToggler.querySelector('span').innerHTML = (mainNav.classList.contains('main-nav--opened')) ? 'Закрыть меню' : 'Открыть меню';
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -27,13 +27,18 @@
 }
 
 .advantages__text {
+  padding-right: 5px;
   font-size: 14px;
 }
 
 @media (min-width: $bp-middle) {
+  .advantages {
+    border-bottom: 1px solid $color-gray;
+  }
+
   .advantages__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     counter-reset: myCounter;
@@ -42,17 +47,23 @@
   .advantages__item {
     display: block;
     position: relative;
-    width: 245px;
+    width: 250px;
     min-height: 231px;
-    margin-right: 150px;
+    margin-right: 135px;
+    margin-bottom: 85px;
 
     &:nth-child(2n) {
       margin-right: 0;
     }
 
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 35px;
+    }
+
     &::before {
       position: absolute;
-      right: 0;
+      right: 5px;
       top: 0;
       counter-increment: myCounter;
       content: counter(myCounter);
@@ -67,20 +78,34 @@
   .advantages__text {
     position: relative;
     z-index: 1;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .advantages__img {
-    margin-bottom: 40px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: $bp-xlarge) {
+  .advantages {
+    border: none;
+  }
+
+  .advantages__inner {
+    padding-top: 30px;
+  }
+
   .advantages__list {
     margin-right: -40px;
     margin-left: -40px;
   }
 
   .advantages__item {
+    width: 245px;
+    flex-grow: 0;
     margin: 0 40px;
 
     &:nth-child(2n) {

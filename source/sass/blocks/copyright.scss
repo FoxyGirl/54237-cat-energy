@@ -40,6 +40,10 @@
 }
 
 @media (min-width: $bp-middle) {
+  .copyright {
+    padding-top: 35px;
+  }
+
   .copyright__link {
     margin-right: 20px;
   }
