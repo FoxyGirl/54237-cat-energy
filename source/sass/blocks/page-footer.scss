@@ -16,25 +16,14 @@
   background-color: $color-gray;
 }
 
-.page-footer__logo {
-  height: 95px;
-}
-
 @media (min-width: $bp-middle) {
   .page-footer__bottom {
     .page-footer__inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-  }
-
-  .page-footer__logo {
-    height: auto;
-
-    img {
-      width: auto;
-      height: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 

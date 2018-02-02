@@ -14,14 +14,19 @@
 
   .page-header__logo {
     height: 110px;
+    margin-right: 20px;
+    flex-grow: 0;
   }
 }
 
 @media (min-width: $bp-xlarge) {
   .page-header {
     position: relative;
+    margin-bottom: 80px;
 
     &--promo {
+      overflow: hidden;
+
       &::before {
         content: "";
         position: absolute;
@@ -32,16 +37,11 @@
         background: $color-main url("../img/index-background-mobile@1x.jpg") center no-repeat;
         background-size: cover;
       }
-
-      .main-nav__link {
-        color: $color-light;
-
-        &--active {
-          &::after {
-            background-color: $color-light;
-          }
-        }
-      }
     }
+  }
+
+  .page-header__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }

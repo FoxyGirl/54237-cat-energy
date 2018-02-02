@@ -25,6 +25,7 @@
   font-weight: 400;
   font-size: 24px;
   font-family: $ffam-cond;
+  text-transform: uppercase;
   color: $color-dark;
 }
 
@@ -38,6 +39,7 @@
   padding: 0 15px;
   font-weight: normal;
   font-size: 14px;
+  line-height: 1.0;
   font-family: $ffam-base;
   color: $color-text;
   background-color: $color-light-gray;
@@ -70,12 +72,12 @@
 
   .result__value {
     font-size: 30px;
+    margin-bottom: 8px;
   }
 
   .result__desc {
     flex-shrink: 0;
-    //max-width: 90%;
-    max-width: auto;
+    max-width: none;
     padding: 0 5px;
   }
 

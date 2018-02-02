@@ -4,14 +4,16 @@
 
 .example__inner {
   @include container;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: $indent;
 }
 
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+  padding-right: 5px;
   font-size: 14px;
+  line-height: 1.29;
 }
 
 .example__result {
@@ -19,13 +21,36 @@
 }
 
 .example__slider {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: $bp-middle) {
   .example {
     background-color: $color-light;
     background-image: linear-gradient(to top, $color-light-gray 0, $color-light-gray 465px, $color-light 465px, $color-light 100%);
+  }
+
+  .example__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .example__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  .example__text {
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .example__result {
+    padding-top: 30px;
+  }
+
+  .example__slider {
+    margin-bottom: 40px;
   }
 }
 

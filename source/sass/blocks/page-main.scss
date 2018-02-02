@@ -1,6 +1,6 @@
 .page-main__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 36px;
   font-family: $ffam-cond;
@@ -31,7 +31,8 @@
 
 @media (min-width: $bp-middle) {
   .page-main__title {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
+    font-size: 60px;
   }
 }
 
