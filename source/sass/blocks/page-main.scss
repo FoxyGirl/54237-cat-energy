@@ -21,6 +21,8 @@
   //overflow: hidden;
 
   span {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
     padding-right: 22px;
     z-index: 1;

@@ -3,8 +3,18 @@
 }
 
 .product__item {
+  position: relative;
   padding: 20px 0;
-  border-top: 1px solid $color-gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 100vw;
+    height: 0;
+    border-top: 1px solid $color-gray;
+  }
 
   &--add {
     .product__wrapper {
@@ -107,6 +117,10 @@
     padding-top: 168px;
     border-top: none;
     background-color: $color-light-gray;
+
+    &::before {
+      border-top: none;
+    }
 
     &:nth-child(2n) {
       //margin-right: 0;
