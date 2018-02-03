@@ -12,6 +12,11 @@
   padding-right: 0;
 }
 
+.page-header__logo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media (min-width: $bp-middle) {
   .page-header {
     border-bottom: none;
@@ -26,7 +31,8 @@
 
   .page-header__logo {
     height: 110px;
-    margin-right: 20px;
+    //margin-left: 20px;
+    //margin-right: 20px;
     flex-grow: 0;
   }
 }
@@ -46,8 +52,12 @@
         top: 0;
         width: calc(50% - 40px);
         height: 100%;
-        background: $color-main url("../img/index-background-mobile@1x.jpg") center no-repeat;
+        background: $color-main url("../img/index-background-desktop@1x.jpg") center no-repeat;
         background-size: cover;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
       }
     }
   }

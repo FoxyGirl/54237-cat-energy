@@ -35,6 +35,17 @@
   align-items: center;
   padding: 7px 0;
   text-transform: uppercase;
+
+  &--icons {
+    position: relative;
+
+    .form__icon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .form__label {
@@ -79,11 +90,19 @@
   &:active,
   &:focus {
     outline: 2px solid #4d4d4d;
+
+    & + .form__icon {
+      fill: $color-main;
+    }
   }
 
   &:invalid {
     outline: 2px solid #ff8282;
   }
+
+  //&:invalid:not(:placeholder-shown) {
+  //  outline: 2px solid #ff8282;
+  //}
 
   &--tel,
   &--email {

@@ -18,3 +18,6 @@ $bp-xsmall: 320px; // Tiny-screen and old devices;
 $bp-middle: 768px; // Normal mobile devices and small tablets;
 // $bp-large: 992px; // Desktop starts here
 $bp-xlarge: 1220px + 2 * 40px; // Desktop seamless transition
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -1,9 +1,9 @@
 .logo {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 192px;
   height: 65px;
 
   &:hover,
@@ -15,21 +15,13 @@
     opacity: 0.6;
   }
 
-  &--add {
-    &::before {
-      content: "";
-      position: absolute;
-      left: $indent;
-      width: 40px;
-      height: 40px;
-      background: transparent url("../img/icon-logo-mobile.svg") center center no-repeat;
-    }
-  }
-
   &--footer {
+    display: block;
+    width: 100%;
     padding: 45px 0;
+    text-align: center;
 
-    img {
+    .logo__img {
       width: 128px;
       height: auto;
     }
@@ -51,15 +43,13 @@
     text-align: left;
 
     &--add {
-      &::before {
-        position: static;
-        width: 70px;
-        height: 60px;
-        background-size: contain;
+      img:first-child {
+        display: none;
       }
     }
 
     &--footer {
+      width: 130px;
       height: auto;
 
       .logo__img {
@@ -70,25 +60,18 @@
   }
 
   .logo__img {
-    width: 86px;
-    height: 17px;
+    width: 175px;
+    height: 58px;
   }
 }
 
 @media (min-width: $bp-xlarge) {
   .logo {
     width: 205px;
-
-    &--add {
-      &::before {
-        width: 79px;
-        height: 69px;
-      }
-    }
   }
 
   .logo__img {
-    width: 120px;
-    height: 30px;
+    width: 205px;
+    height: 60px;
   }
 }
