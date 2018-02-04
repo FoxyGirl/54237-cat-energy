@@ -1,5 +1,6 @@
 .map {
   background: $color-gray url("../img/bg-map-mobile@1x.png") center center no-repeat;
+  background-size: auto 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
