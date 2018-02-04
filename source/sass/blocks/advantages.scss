@@ -27,7 +27,6 @@
 }
 
 .advantages__text {
-  padding-right: 5px;
   font-size: 14px;
 }
 
@@ -96,6 +95,7 @@
 
   .advantages__inner {
     padding-top: 30px;
+    padding-bottom: 0;
   }
 
   .advantages__list {
@@ -110,6 +110,11 @@
 
     &:nth-child(2n) {
       margin-right: 40px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0;
     }
   }
 }

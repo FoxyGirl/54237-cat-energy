@@ -8,9 +8,6 @@
 }
 
 .categories__item {
-  //display: flex;
-  //align-items: center;
-  //flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 20px;
   padding-top: 30px;
@@ -48,7 +45,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: -10px;
+    top: -6px;
     width: 70px;
     height: 70px;
     background: transparent url("../img/icon-cat-slim.svg") center no-repeat;
@@ -138,7 +135,7 @@
 
     &:nth-child(2) {
       .categories__text {
-        padding-right: 29px;
+        padding-right: 35px;
       }
     }
   }
