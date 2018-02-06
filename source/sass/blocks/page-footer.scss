@@ -1,5 +1,9 @@
 .page-footer__top {
   background-color: $color-light;
+
+  &--gray {
+    background-color: $color-light-gray;
+  }
 }
 
 .page-footer__bottom {
