@@ -1,7 +1,7 @@
 .page-main__title {
   margin: 0;
   margin-bottom: 30px;
-  padding: 0px;
+  padding: 0;
   font-weight: 400;
   font-size: 36px;
   font-family: $ffam-cond;
@@ -10,12 +10,12 @@
 
 .page-main__subtitle {
   position: relative;
-  padding: 25px $indent 25px 0;
+  margin-bottom: 5px;
+  padding: 25px 20px 25px 0;
   font-weight: 400;
   font-size: 24px;
   font-family: $ffam-cond;
   color: $color-dark;
-  //overflow: hidden;
 
   span {
     display: inline-block;
@@ -29,10 +29,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 19px;
     left: 50%;
     right: 50%;
-    height: 4px;
+    height: 3px;
     width: 100vw;
     margin-right: -50vw;
     margin-left: -30vw;
@@ -47,14 +47,14 @@
   }
 
   .page-main__subtitle {
-    padding-top: 10px;
     font-size: 36px;
 
     span {
-      padding-left: 22px;
+      padding: 0 40px;
     }
 
     &::before {
+      top: 30px;
       margin-left: -50vw;
     }
   }
@@ -66,6 +66,6 @@
   }
 
   .page-main__subtitle {
-    padding-left: 30px;
+    margin-left: -40px;
   }
 }

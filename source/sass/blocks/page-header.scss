@@ -39,10 +39,10 @@
 @media (min-width: $bp-xlarge) {
   .page-header {
     position: relative;
-    margin-bottom: 80px;
 
     &--promo {
       overflow: hidden;
+      margin-bottom: 80px;
 
       &::before {
         content: "";
