@@ -2,6 +2,7 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var imagemin = require("gulp-imagemin");
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var plumber = require("gulp-plumber");
@@ -44,6 +45,15 @@ gulp.task("svg-sprite", function() {
       inlineSvg: true
     }))
     .pipe(rename("svg-sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{png,jpg,gif}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+    ]))
     .pipe(gulp.dest("source/img"));
 });
 
