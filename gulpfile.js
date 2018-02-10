@@ -10,6 +10,7 @@ var postcss = require("gulp-postcss");
 var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var webp = require("gulp-webp");
 
 gulp.task('svg-clean', function () {
   return gulp.src('source/img/*' +
@@ -54,6 +55,12 @@ gulp.task("images", function() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
     ]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("webp", function() {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
 });
 
