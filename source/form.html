@@ -44,7 +44,6 @@
         <div class="page-header__inner">
 
           <a class="page-header__logo  logo  logo--add" href="index.html" title="Кэт энерджи">
-            <img src="img/icon-logo-mobile.svg" width="40" height="40" alt="Лого">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -132,7 +131,7 @@
                   </svg>
                 </div>
                 <div class="form__item  form__item--icons">
-                  <label class="form__label  form__label--required" for="phone">Телефон:</label>
+                  <label class="form__label  form__label--required" for="phone">Телефон</label>
                   <input class="form__input  form__input--tel" type="tel" pattern="[-( )0-9]*"  placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
                   <svg class="form__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" viewBox="0 0 20 20" width="20" height="20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
@@ -146,7 +145,7 @@
                 </div>
               </div>
               <h2 class="form__subtitle  page-main__subtitle"><span>Комментарий</span></h2>
-              <div class="form__section">
+              <div class="form__section  form__section--textarea">
                 <div class="form__item">
                   <textarea class="form__input  form__input--textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
                 </div>
@@ -179,7 +178,7 @@
                 </div>
               </div>
               <div class="form__footer">
-                <button type="submit" class="form__btn btn">Отправить заявку</button>
+                <button type="submit" class="form__btn btn  btn--form">Отправить заявку</button>
                 <small class="form__note">* — Обязательные поля</small>
               </div>
             </form>
@@ -192,7 +191,7 @@
     </div>
 
     <footer class="page-footer">
-      <div class="page-footer__top">
+      <div class="page-footer__top  page-footer__top--gray">
         <div class="page-footer__inner">
 
           <div class="page-footer__contacts  contacts">
@@ -201,8 +200,8 @@
                 приглашаем к&nbsp;сотрудничеству дилеров!
               </div>
               <address class="contacts__address">
-                ул. Большая Конюшенная, д. 19/8<br/>
-                Санкт-Петербург
+                ул. Большая Конюшенная, д. 19/8
+                <span>Санкт-Петербург</span>
               </address>
             </div>
           </div>
@@ -214,7 +213,7 @@
       <div class="page-footer__bottom">
         <div class="page-footer__inner">
 
-          <a class="page-footer__logo  logo" href="index.html">
+          <a class="page-footer__logo  logo  logo--footer" href="index.html">
             <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
           </a>
 
