@@ -142,6 +142,10 @@
 }
 
 @media (min-width: $bp-xlarge) {
+  .slider {
+    padding-top: 10px;
+  }
+
   .slider__content {
     img:last-child {
       display: none;

@@ -5,17 +5,39 @@
 .catalog__inner {
   @include container;
   padding-bottom: $indent;
+
+  .catalog__title {
+    margin-top: 18px;
+  }
+
+  .catalog__subtitle {
+    padding-top: 0;
+  }
 }
 
-.catalog__title {
-  padding-top: 10px;
-  padding-bottom: 20px;
+@media (min-width: $bp-middle) {
+  .catalog__inner {
+    .catalog__title {
+      margin-bottom: 10px;
+    }
+
+    .catalog__subtitle {
+      margin-bottom: 78px;
+    }
+  }
 }
 
 @media (min-width: $bp-xlarge) {
+  .catalog__inner {
+    .catalog__title {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
   .catalog__bottom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 90px;
   }
 }

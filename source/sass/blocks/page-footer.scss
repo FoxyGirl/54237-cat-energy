@@ -1,5 +1,9 @@
 .page-footer__top {
   background-color: $color-light;
+
+  &--gray {
+    background-color: $color-light-gray;
+  }
 }
 
 .page-footer__bottom {
@@ -16,14 +20,30 @@
   background-color: $color-gray;
 }
 
+@media (max-width: $bp-middle - 1px) {
+  .page-footer__inner {
+    .page-footer__logo {
+      min-height: 95px;
+      display: flex;
+
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
+
 @media (min-width: $bp-middle) {
   .page-footer__bottom {
+    height: 150px;
+
     .page-footer__inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-top: 20px;
       padding-bottom: 20px;
+      min-height: 150px;
     }
   }
 
@@ -35,7 +55,7 @@
 @media (min-width: $bp-xlarge) {
   .page-footer__contacts {
     position: absolute;
-    top: 90px;
+    top: 100px;
   }
 
   .page-footer__map {

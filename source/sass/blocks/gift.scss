@@ -1,22 +1,36 @@
 .gift {
   position: relative;
-  height: 289px;
+  min-height: 289px;
+  margin-bottom: 15px;
+  padding: 185px 20px 20px 20px;
   background-color: $color-main;
-  background-image:
-    url("../img/icon-gift.svg"),
-    url("../img/gift-photo-mobile@1x.jpg");
-  background-position: center 64px, center center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 55px 60px, cover;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    width: 55px;
+    height: 60px;
+    margin: auto;
+    background: transparent url("../img/icon-gift.svg") 0 0 no-repeat;
+    background-size: cover;
+  }
 }
 
 .gift__text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 50px;
-  width: 160px;
-  margin: auto;
+  width: 57%;
+  margin: 0 auto;
+  padding: 0;
   font-weight: normal;
   font-size: 16px;
   font-family: $ffam-base;
@@ -24,10 +38,58 @@
   color: $color-light;
 }
 
+@media (min-width: $bp-middle) {
+  .gift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+    margin-bottom: 55px;
+    padding: 55px 116px 55px 90px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      position: static;
+      margin: 0;
+      margin-top: -11px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .gift__text {
+    //width: 170px;
+    width: 34%;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+
 @media (min-width: $bp-xlarge) {
   .gift {
+    flex-shrink: 0;
     width: 245px;
     height: auto;
-    flex-shrink: 0;
+    margin-bottom: 0;
+    padding: 30px;
+    padding-top: 175px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+
+    &::before {
+      position: absolute;
+      margin: auto;
+    }
+  }
+
+  .gift__text {
+    width: 170px;
+    margin-left: 0;
+    text-align: center;
   }
 }

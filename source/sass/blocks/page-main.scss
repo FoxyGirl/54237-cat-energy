@@ -1,24 +1,26 @@
 .page-main__title {
   margin: 0;
   margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: $indent;
-  padding-right: $indent;
+  padding: 0;
   font-weight: 400;
   font-size: 36px;
   font-family: $ffam-cond;
   color: $color-dark;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
 
 .page-main__subtitle {
   position: relative;
-  padding: 25px $indent 25px 0;
+  margin-bottom: 35px;
+  padding: 0 20px 0 0;
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.1;
   font-family: $ffam-cond;
   color: $color-dark;
-  //overflow: hidden;
 
   span {
     display: inline-block;
@@ -27,15 +29,19 @@
     padding-right: 22px;
     z-index: 1;
     background-color: $color-light;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 15px;
     left: 50%;
     right: 50%;
-    height: 4px;
+    height: 3px;
     width: 100vw;
     margin-right: -50vw;
     margin-left: -30vw;
@@ -45,21 +51,19 @@
 
 @media (min-width: $bp-middle) {
   .page-main__title {
-    margin-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 60px;
   }
 
   .page-main__subtitle {
-    padding-top: 10px;
     font-size: 36px;
+    padding-right: 0;
 
     span {
-      padding-left: 22px;
+      padding: 0 40px;
     }
 
     &::before {
+      top: 20px;
       margin-left: -50vw;
     }
   }
@@ -71,6 +75,6 @@
   }
 
   .page-main__subtitle {
-    padding-left: 30px;
+    margin-left: -40px;
   }
 }

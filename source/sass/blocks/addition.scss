@@ -1,5 +1,5 @@
 .addition {
-  padding: $indent 0;
+  padding: 28px 0 23px;
   text-align: center;
   border-bottom: 1px solid $color-gray;
 }
@@ -7,11 +7,12 @@
 .addition__title {
   position: relative;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   padding-top: 50px;
   font-weight: 400;
   font-size: 16px;
   font-family: $ffam-cond;
+  text-transform: uppercase;
   color: $color-dark;
 
   &::before {
@@ -46,21 +47,23 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding-bottom: 0;
+    padding: 0;
     border: none;
   }
 
   .addition__title {
     width: 165px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     padding-top: 120px;
     font-size: 20px;
     line-height: 1;
-    text-transform: uppercase;
+
 
     &::before {
+      top: 12px;
       width: 60px;
       height: 60px;
+      background-image: url("../img/icon-plus.svg");
     }
   }
 
@@ -70,7 +73,6 @@
   }
 
   .addition__btn {
-    //width: 280px;
     width: 100%;
     margin-top: auto;
   }

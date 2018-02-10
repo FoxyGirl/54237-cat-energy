@@ -17,6 +17,7 @@
 }
 
 .contacts__address {
+  max-width: 145px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
@@ -56,7 +57,7 @@
   }
 
   .contacts__inner {
-    padding: 60px 70px;
+    padding: 60px 75px;
   }
 
   .contacts__slogan {
@@ -66,6 +67,7 @@
   .contacts__address {
     width: 170px;
     font-size: 16px;
+    text-align: left;
 
     br {
       display: inline-block;

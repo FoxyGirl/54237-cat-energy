@@ -1,11 +1,30 @@
 .choice-program {
   overflow: hidden;
+
+  .choice-program__title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
 }
 
 .choice-program__inner {
   @include container;
 }
 
-.choice-program__title {
-  padding: 30px 0;
+@media (min-width: $bp-middle) {
+  .choice-program {
+    .choice-program__title {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: $bp-xlarge) {
+  .choice-program {
+    .choice-program__title {
+      margin-bottom: 50px;
+      line-height: 1;
+    }
+  }
 }

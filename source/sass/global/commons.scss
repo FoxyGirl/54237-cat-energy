@@ -51,6 +51,11 @@ img {
   flex: 1 0 auto;
 }
 
+.mobile-hidden {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
 
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
