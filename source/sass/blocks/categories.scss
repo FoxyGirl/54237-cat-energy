@@ -236,5 +236,9 @@
   .categories__text {
     margin-bottom: 12px;
     padding-bottom: 0;
+
+    br {
+      display: none;
+    }
   }
 }

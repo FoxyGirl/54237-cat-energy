@@ -39,10 +39,22 @@
       color: rgba($color-dark, 0.3);
     }
   }
+
+  &--form {
+    font-size: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
 }
 
 @media (min-width: $bp-middle) {
   .btn {
     font-size: 16px;
+
+    &--form {
+      font-size: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
   }
 }
