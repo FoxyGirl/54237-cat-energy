@@ -15,7 +15,8 @@
   outline: none;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $color-secondary;
   }
 
@@ -31,7 +32,8 @@
     background-color: $color-light-gray;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       background-color: $color-gray;
     }
 

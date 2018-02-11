@@ -7,7 +7,6 @@
   .form__subtitle {
     margin-bottom: 25px;
     margin-top: 25px;
-    //margin-top: 0;
   }
 }
 
@@ -164,8 +163,14 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        border: 2px solid $color-gray;
+        border: 1px solid $color-gray;
         background-color: $color-light;
+      }
+    }
+
+    &:hover + span {
+      &::before {
+        border-color: #cfcfcf;
       }
     }
 
