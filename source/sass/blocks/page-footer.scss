@@ -35,7 +35,7 @@
 
 @media (min-width: $bp-middle) {
   .page-footer__bottom {
-    height: 150px;
+    min-height: 150px;
 
     .page-footer__inner {
       display: flex;
