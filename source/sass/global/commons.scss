@@ -57,6 +57,12 @@ img {
   }
 }
 
+.mobile-shown {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
  * Correct `block` display not defined for `details` or `summary` in IE 10/11
