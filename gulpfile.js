@@ -19,6 +19,8 @@ var run =require("run-sequence");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
+var mqpacker = require("css-mqpacker");
+var sortCSSmq = require('sort-css-media-queries');
 
 gulp.task("clean", function() {
   return del("build");
@@ -96,7 +98,17 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({browsers: [
+        "last 1 version",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Opera versions",
+        "last 2 Edge versions",
+        "IE 11"
+      ]}),
+      mqpacker({
+        sort: sortCSSmq
+      })
     ]))
     .pipe(minify())
     .pipe(rename("style.min.css"))
