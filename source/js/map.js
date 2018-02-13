@@ -1,8 +1,12 @@
+/** @function debounce
+ *  Init Google Map with custom marker.
+ *  Change marker size and map's center depending on window width.
+ */
 function initMap() {
   var uluru = {lat: 59.938821, lng: 30.323040};
   var centerNew = {lat: 59.938934, lng: 30.319371};
   var windowWidth = window.innerWidth;
-  var centerDesktop =windowWidth >= 1300 ? centerNew : uluru;
+  var centerDesktop = windowWidth >= 1300 ? centerNew : uluru;
 
   var markerX = windowWidth < 1300 ? (windowWidth < 768 ? 60 : 100) : 124;
   var markerY = windowWidth < 1300 ? (windowWidth < 768 ? 51 : 85) : 106;
@@ -15,7 +19,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: uluru,
     icon: {
-      url: "img/map-pin.png",
+      url: 'img/map-pin.png',
       scaledSize: new google.maps.Size(markerX, markerY)
     },
     map: map
