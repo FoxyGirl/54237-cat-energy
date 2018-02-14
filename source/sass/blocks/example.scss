@@ -33,6 +33,7 @@
   .example__inner {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-bottom: 0;
 
     .example__title {
       margin-bottom: 50px;
@@ -50,7 +51,7 @@
   }
 
   .example__slider {
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
   }
 }
 
@@ -59,7 +60,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 40px;
+    //padding-bottom: 40px;
 
     .example__title {
       margin-bottom: 130px;
