@@ -25,7 +25,7 @@
   position: relative;
   padding: 15px 0;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -39,7 +39,7 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    &::before {
+    &::after {
       border-bottom: none;
     }
 
@@ -125,6 +125,14 @@
       fill: $color-main;
     }
   }
+
+  &:disabled {
+    & + span {
+      opacity: 0.3;
+    }
+
+
+  }
   /*
   &:invalid {
     outline: 2px solid #ff8282;
@@ -203,8 +211,14 @@
         top: 3px;
         width: 30px;
         height: 30px;
-        border: 2px solid $color-gray;
+        border: 1px solid $color-gray;
         background-color: $color-light;
+      }
+    }
+
+    &:hover + span {
+      &::before {
+        border-color: #cfcfcf;
       }
     }
 
@@ -270,7 +284,7 @@
     padding: 37px 0;
     border: none;
 
-    &::before {
+    &::after {
       border-bottom: none;
     }
 
@@ -281,7 +295,7 @@
       padding-bottom: 17px;
       padding-left: 30px;
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         left: 0;
