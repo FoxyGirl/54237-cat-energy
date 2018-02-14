@@ -50,7 +50,7 @@
 
             <h1 class="choice-program__title  page-main__title">Подбор программы</h1>
 
-            <form class="choice-program__form  form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="choice-program__form  form" action="https://echo.htmlacademy.ru" method="post" id="formProgram">
               <p class="form__text">
                 Заполните анкету и мы подберем программу питания для вашего кота
               </p>
@@ -58,15 +58,15 @@
                 <div class="form__section">
                   <div class="form__item">
                     <label class="form__label  form__label--required" for="name">Имя:</label>
-                    <input class="form__input  form__input--text" type="text" placeholder="Барсик" name="name" id="name" required>
+                    <input class="form__input  form__input--text" type="text" placeholder="Барсик" name="name" id="name" required autofocus>
                   </div>
                   <div class="form__item">
                     <label class="form__label  form__label--required" for="weight">Вес (кг):</label>
-                    <input class="form__input  form__input--text" type="text" placeholder="7" name="weight" id="weight" required>
+                    <input class="form__input  form__input--text" type="text" placeholder="7" name="weight" id="weight" required pattern="[,-\.\d]*">
                   </div>
                   <div class="form__item">
                     <label class="form__label" for="age">Возраст (лет):</label>
-                    <input class="form__input  form__input--text" type="text" placeholder="7" name="age" id="age">
+                    <input class="form__input  form__input--text" type="text" placeholder="7" name="age" id="age" pattern="[,\.\d]*">
                   </div>
                 </div>
 
@@ -143,7 +143,7 @@
                 </div>
               </div>
               <div class="form__footer">
-                <button type="submit" class="form__btn btn  btn--form">Отправить заявку</button>
+                <button class="form__btn btn  btn--form" type="submit" id="formSubmit">Отправить заявку</button>
                 <small class="form__note">* — Обязательные поля</small>
               </div>
             </form>

@@ -130,14 +130,19 @@
     & + span {
       opacity: 0.3;
     }
-
-
   }
-  /*
-  &:invalid {
+
+  &--error {
     outline: 2px solid #ff8282;
+
+    &:focus {
+      outline: 2px solid #ff8282;
+    }
+
+    &:valid {
+      outline: none;
+    }
   }
-  */
 
   &--tel,
   &--email {
