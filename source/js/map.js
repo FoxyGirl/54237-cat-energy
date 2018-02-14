@@ -1,4 +1,4 @@
-/** @function debounce
+/** @function initMap
  *  Init Google Map with custom marker.
  *  Change marker size and map's center depending on window width.
  */
