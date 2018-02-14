@@ -6,10 +6,12 @@ function initMap() {
   var uluru = {lat: 59.938821, lng: 30.323040};
   var centerNew = {lat: 59.938934, lng: 30.319371};
   var windowWidth = window.innerWidth;
-  var centerDesktop = windowWidth >= 1300 ? centerNew : uluru;
+  var TABLE_WIDTH = 768;
+  var DESKTOP_WIDTH = 1300;
+  var centerDesktop = windowWidth >= DESKTOP_WIDTH ? centerNew : uluru;
 
-  var markerX = windowWidth < 1300 ? (windowWidth < 768 ? 60 : 100) : 124;
-  var markerY = windowWidth < 1300 ? (windowWidth < 768 ? 51 : 85) : 106;
+  var markerWidth = windowWidth < DESKTOP_WIDTH ? (windowWidth < TABLE_WIDTH ? 60 : 100) : 124;
+  var markerHeight = windowWidth < DESKTOP_WIDTH ? (windowWidth < TABLE_WIDTH ? 51 : 85) : 106;
 
   var map = new google.maps.Map(document.getElementById('map'), {
     center: centerDesktop,
@@ -20,7 +22,7 @@ function initMap() {
     position: uluru,
     icon: {
       url: 'img/map-pin.png',
-      scaledSize: new google.maps.Size(markerX, markerY)
+      scaledSize: new google.maps.Size(markerWidth, markerHeight)
     },
     map: map
   });
