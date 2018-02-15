@@ -51,7 +51,7 @@
 
 @media (min-width: $bp-xlarge) {
   .example {
-    background-image: linear-gradient(to bottom, $color-light 0, $color-light 200px, $color-light-gray 200px, $color-light-gray 100%);
+    background-image: linear-gradient(to bottom, $color-light 0, $color-light 210px, $color-light-gray 210px, $color-light-gray 100%);
   }
 
   .example__inner {
@@ -65,12 +65,12 @@
   }
 
   .example__content {
-    width: 435px;
+    width: 445px;
     flex-shrink: 0;
     padding-top: 60px;
   }
 
   .example__text {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 }

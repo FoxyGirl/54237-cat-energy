@@ -339,6 +339,10 @@
         width: 45%;
         margin-bottom: 15px;
         flex: 1 0 auto;
+
+        &:nth-child(odd) {
+          margin-right: 10%;
+        }
       }
     }
   }
@@ -502,10 +506,14 @@
       margin-bottom: 13px;
 
       .form__item {
-        width: 326px;
+        width: 248px;
 
         &:last-child {
           width: auto;
+        }
+
+        &:nth-child(odd) {
+          margin-right: 0px;
         }
       }
     }
