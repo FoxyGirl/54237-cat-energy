@@ -98,11 +98,11 @@
   &::after {
     position: absolute;
     content: "";
-    width: 35px;
+    width: 31px;
     height: 11px;
     left: 100%;
     bottom: 6px;
-    background: transparent url("../img/icon-right-arrow-long.svg") -9px 0 no-repeat;
+    background: transparent url("../img/icon-right-arrow-verylong.svg") -9px 0 no-repeat;
     background-size: 100% 100%;
     transition: background-position 0.3s;
   }
@@ -178,7 +178,7 @@
     font-size: 20px;
 
     &::after {
-      width: 41px;
+      width: 35px;
       height: 13px;
       bottom: 10px;
     }

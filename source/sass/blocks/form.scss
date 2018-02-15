@@ -7,7 +7,6 @@
   .form__subtitle {
     margin-bottom: 25px;
     margin-top: 25px;
-    //margin-top: 0;
   }
 }
 
@@ -26,7 +25,7 @@
   position: relative;
   padding: 15px 0;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -40,7 +39,7 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    &::before {
+    &::after {
       border-bottom: none;
     }
 
@@ -126,11 +125,24 @@
       fill: $color-main;
     }
   }
-  /*
-  &:invalid {
-    outline: 2px solid #ff8282;
+
+  &:disabled {
+    & + span {
+      opacity: 0.3;
+    }
   }
-  */
+
+  &--error {
+    outline: 2px solid #ff8282;
+
+    &:focus {
+      outline: 2px solid #ff8282;
+    }
+
+    &:valid {
+      outline: none;
+    }
+  }
 
   &--tel,
   &--email {
@@ -164,8 +176,14 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        border: 2px solid $color-gray;
+        border: 1px solid $color-gray;
         background-color: $color-light;
+      }
+    }
+
+    &:hover + span {
+      &::before {
+        border-color: #cfcfcf;
       }
     }
 
@@ -198,8 +216,14 @@
         top: 3px;
         width: 30px;
         height: 30px;
-        border: 2px solid $color-gray;
+        border: 1px solid $color-gray;
         background-color: $color-light;
+      }
+    }
+
+    &:hover + span {
+      &::before {
+        border-color: #cfcfcf;
       }
     }
 
@@ -265,7 +289,7 @@
     padding: 37px 0;
     border: none;
 
-    &::before {
+    &::after {
       border-bottom: none;
     }
 
@@ -276,7 +300,7 @@
       padding-bottom: 17px;
       padding-left: 30px;
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         left: 0;
@@ -314,6 +338,11 @@
       .form__item {
         width: 45%;
         margin-bottom: 15px;
+        flex: 1 0 auto;
+
+        &:nth-child(odd) {
+          margin-right: 10%;
+        }
       }
     }
   }
@@ -477,10 +506,14 @@
       margin-bottom: 13px;
 
       .form__item {
-        width: 326px;
+        width: 248px;
 
         &:last-child {
           width: auto;
+        }
+
+        &:nth-child(odd) {
+          margin-right: 0px;
         }
       }
     }

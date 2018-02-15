@@ -12,12 +12,16 @@
 }
 
 .socials__item {
-  margin: 10px 10px;
+  margin: 10px 9px;
 }
 
 .socials__link {
   display: block;
   padding: 10px;
+
+  svg {
+    fill: #666666;
+  }
 
   &:hover,
   &:focus {
@@ -34,7 +38,7 @@
 @media (min-width: $bp-middle) {
   .socials {
     border: none;
-    margin-right: 22px;
+    margin-left: 22px;
   }
 
   .socials__link {
@@ -61,5 +65,13 @@
         height: 28px;
       }
     }
+  }
+}
+
+@media (min-width: $bp-xlarge) {
+  .socials {
+    margin-left: 0;
+    margin-right: 45px;
+    margin-top: -10px;
   }
 }

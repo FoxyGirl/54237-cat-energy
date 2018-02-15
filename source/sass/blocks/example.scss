@@ -5,7 +5,7 @@
 .example__inner {
   @include container;
   padding-top: 20px;
-  padding-bottom: $indent;
+  padding-bottom: 0;
 }
 
 .example__text {
@@ -20,19 +20,14 @@
   margin-bottom: 20px;
 }
 
-.example__slider {
-  margin-bottom: 15px;
-}
 
 @media (min-width: $bp-middle) {
   .example {
     background-color: $color-light;
-    background-image: linear-gradient(to top, $color-light-gray 0, $color-light-gray 465px, $color-light 465px, $color-light 100%);
   }
 
   .example__inner {
     padding-top: 30px;
-    padding-bottom: 30px;
 
     .example__title {
       margin-bottom: 50px;
@@ -48,18 +43,21 @@
   .example__result {
     padding-top: 30px;
   }
-
-  .example__slider {
-    margin-bottom: 40px;
-  }
+  //
+  //.example__slider {
+  //  margin-bottom: 40px;
+  //}
 }
 
 @media (min-width: $bp-xlarge) {
+  .example {
+    background-image: linear-gradient(to bottom, $color-light 0, $color-light 210px, $color-light-gray 210px, $color-light-gray 100%);
+  }
+
   .example__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 40px;
 
     .example__title {
       margin-bottom: 130px;
@@ -67,16 +65,12 @@
   }
 
   .example__content {
-    width: 435px;
+    width: 445px;
     flex-shrink: 0;
     padding-top: 60px;
   }
 
-  .example__slider {
-    width: 50%;
-  }
-
   .example__text {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 }
