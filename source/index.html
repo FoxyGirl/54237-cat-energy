@@ -194,62 +194,66 @@
 
             <div class="example__slider  slider">
               <div class="slider__content">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1300px)"
-                    srcset="img/before-desktop@1x.webp,
+                <div class="slider__img  slider__img--left">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1300px)"
+                      srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source
+                      media="(min-width: 1300px)"
+                      srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+
+                    <source
+                      type="image/webp"
+                      srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                    <img src="img/after-mobile@1x.png"
+                         srcset="img/after-mobile@2x.png 2x" alt="После похудения" width="320" height="240">
+                  </picture>
+                </div>
+                <div class="slider__img  slider__img--right">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1300px)"
+                      srcset="img/before-desktop@1x.webp,
                             img/before-desktop@2x.webp 2x">
-                  <source
-                    media="(min-width: 1300px)"
-                    srcset="img/before-desktop@1x.png,
+                    <source
+                      media="(min-width: 1300px)"
+                      srcset="img/before-desktop@1x.png,
                             img/before-desktop@2x.png 2x">
 
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="img/before-tablet@1x.webp,
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/before-tablet@1x.webp,
                             img/before-tablet@2x.webp 2x">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/before-tablet@1x.png,
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/before-tablet@1x.png,
                     img/before-tablet@2x.png 2x">
 
-                  <source
-                    type="image/webp"
-                    srcset="img/before-mobile@1x.webp,
+                    <source
+                      type="image/webp"
+                      srcset="img/before-mobile@1x.webp,
                             img/before-mobile@2x.webp 2x">
-                  <img src="img/before-mobile@1x.png"
-                        srcset="img/before-mobile@2x.png 2x" alt="До похудения" width="320" height="240">
-                </picture>
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1300px)"
-                    srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
-                  <source
-                    media="(min-width: 1300px)"
-                    srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
-
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-
-                  <source
-                    type="image/webp"
-                    srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
-                  <img src="img/after-mobile@1x.png"
-                        srcset="img/after-mobile@2x.png 2x" alt="После похудения" width="320" height="240">
-                </picture>
+                    <img src="img/before-mobile@1x.png"
+                         srcset="img/before-mobile@2x.png 2x" alt="До похудения" width="320" height="240">
+                  </picture>
+                </div>
               </div>
               <div class="slider__controls">
-                <button class="slider__control">Было</button>
+                <button class="slider__control  slider__control--before">Было</button>
                 <div class="slider__bar"><span>Бегунок</span></div>
-                <button class="slider__control">Стало</button>
+                <button class="slider__control  slider__control--after">Стало</button>
               </div>
             </div>
 

@@ -5,7 +5,7 @@
 .example__inner {
   @include container;
   padding-top: 20px;
-  padding-bottom: $indent;
+  padding-bottom: 0;
 }
 
 .example__text {
@@ -32,7 +32,6 @@
 
   .example__inner {
     padding-top: 30px;
-    padding-bottom: 30px;
 
     .example__title {
       margin-bottom: 50px;
@@ -59,7 +58,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 40px;
 
     .example__title {
       margin-bottom: 130px;
