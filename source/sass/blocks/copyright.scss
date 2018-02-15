@@ -1,5 +1,5 @@
 .copyright {
-  padding: 20px 0;
+  padding: 0;
 }
 
 .copyright__link {
@@ -35,7 +35,8 @@
 
 @media (min-width: $bp-middle) {
   .copyright {
-    padding-top: 35px;
+    //padding-top: 35px;
+    margin-top: 24px;
   }
 
   .copyright__link {
@@ -47,6 +48,6 @@
 
 @media (min-width: $bp-xlarge) {
   .copyright {
-    padding-top: 20px;
+    margin-top: 0;
   }
 }
