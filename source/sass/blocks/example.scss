@@ -27,7 +27,6 @@
 @media (min-width: $bp-middle) {
   .example {
     background-color: $color-light;
-    background-image: linear-gradient(to top, $color-light-gray 0, $color-light-gray 465px, $color-light 465px, $color-light 100%);
   }
 
   .example__inner {
@@ -47,13 +46,17 @@
   .example__result {
     padding-top: 30px;
   }
-
-  .example__slider {
-    margin-bottom: 40px;
-  }
+  //
+  //.example__slider {
+  //  margin-bottom: 40px;
+  //}
 }
 
 @media (min-width: $bp-xlarge) {
+  .example {
+    background-image: linear-gradient(to bottom, $color-light 0, $color-light 200px, $color-light-gray 200px, $color-light-gray 100%);
+  }
+
   .example__inner {
     display: flex;
     justify-content: space-between;
@@ -68,10 +71,6 @@
     width: 435px;
     flex-shrink: 0;
     padding-top: 60px;
-  }
-
-  .example__slider {
-    width: 50%;
   }
 
   .example__text {

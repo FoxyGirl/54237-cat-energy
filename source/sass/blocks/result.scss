@@ -35,11 +35,6 @@
   vertical-align: top;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 70%;
-  //left: 0;
-  //right: 0;
-  //max-width: 80%;
-  //margin: auto;
   padding: 0 15px;
   font-weight: normal;
   font-size: 14px;
@@ -80,9 +75,11 @@
   }
 
   .result__desc {
-    flex-shrink: 0;
-    max-width: none;
+    //flex-shrink: 0;
+    //max-width: none;
+    width: 85%;
     padding: 0 5px;
+    background-color: $color-light;
   }
 
   .result__cost {

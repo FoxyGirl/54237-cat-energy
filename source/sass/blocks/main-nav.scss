@@ -61,35 +61,6 @@
   }
 }
 
-//.main-nav__toggler--close {
-//  span {
-//    background-color: transparent;
-//    transition: background-color 0.3s, transform 0.3s 0.5s;
-//
-//    &::before,
-//    &::after {
-//      top: 0;
-//      transition: top 0.3s, transform 0.3s 0.5s;
-//    }
-//
-//    &::before {
-//      transform: rotate3d(0, 0, 1, 45deg);
-//    }
-//
-//    &::after {
-//      transform: rotate3d(0, 0, 1, -45deg);
-//    }
-//  }
-//
-//  &:hover,
-//  &:focus {
-//    span {
-//      transform: rotate3d(0, 0, 1, -90deg);
-//      transition: transform 0.3s 0.5s;
-//    }
-//  }
-//}
-
 .main-nav__list {
   @include ul-clear;
   border-top: 1px solid $color-gray;
@@ -207,7 +178,7 @@
   }
 
   .main-nav__item {
-    margin: 0 16px;
+    margin: 0 17px;
     padding: 0;
     border: none;
 
