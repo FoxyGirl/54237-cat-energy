@@ -1,6 +1,4 @@
 ;(function () {
-  console.log('slider');
-
   var separator = document.querySelector('.slider__bar > span');
   var sliderBar = document.querySelector('.slider__bar');
   var imgRight = document.querySelector('.slider__img--right');
@@ -49,16 +47,18 @@
   window.addEventListener('resize', debounceResizeSlider);
 
   function initSlider() {
-    var proc;
+    var proc = parseInt(imgLeft.style.width, 10);
+    if (isNaN(proc)) {
+      proc = 50;
+    }
+
     if (window.innerWidth < TABLET_WIDTH) {
-      proc = parseInt(imgLeft.style.width, 10);
-      var newRes = proc < 50 ? SEPARATOR_BEFORE : SEPARATOR_AFTER;
-      proc = proc < 50 ? 0 : 100;
+      var newRes = proc <= 50 ? SEPARATOR_BEFORE : SEPARATOR_AFTER;
+      proc = proc <= 50 ? 0 : 100;
       separator.style.left = newRes + 'px';
       changeeSlider(proc);
     } else {
-      proc = imgLeft.style.width;
-      separator.style.left = proc;
+      separator.style.left = imgLeft.style.width;
       changeeSlider(proc);
     }
   }
