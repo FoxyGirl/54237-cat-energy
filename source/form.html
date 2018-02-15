@@ -1,233 +1,239 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Форма / Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
-  </script>
-  <script src="js/picturefill.min.js" async></script>
-</head>
-<body>
-<div style="display: none">
-  <include src="build/img/svg-sprite.svg"></include>
-</div>
-<div class="main-wrap">
-  <header class="page-header">
-    <div class="page-header__inner">
-
-      <a class="page-header__logo  logo  logo--add" title="Кэт энерджи">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
-        </picture>
-      </a>
-
-      <nav class="main-nav  main-nav--no-js" id="mainNav">
-        <button class="main-nav__toggler" type="button" id="navToggler">
-          <span>Открыть меню</span>
-        </button>
-        <ul class="main-nav__list" id="mainNav">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--active">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма / Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/svg-sprite.svg"></include>
     </div>
-  </header>
+    <div class="main-wrap">
+      <header class="page-header">
+        <div class="page-header__inner">
 
-  <main class="page-main">
+          <a class="page-header__logo  logo  logo--add" title="Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
+            </picture>
+          </a>
 
-    <section class="choice-program">
-      <div class="choice-program__inner">
+          <nav class="main-nav  main-nav--no-js" id="mainNav">
+            <button class="main-nav__toggler" type="button" id="navToggler">
+              <span>Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
 
-        <h1 class="choice-program__title  page-main__title">Подбор программы</h1>
+        </div>
+      </header>
 
-        <form class="choice-program__form  form" action="https://echo.htmlacademy.ru" method="post" id="formProgram">
-          <p class="form__text">
-            Заполните анкету и мы подберем программу питания для вашего кота
-          </p>
-          <div class="form__up-content">
-            <div class="form__section">
-              <div class="form__item">
-                <label class="form__label  form__label--required" for="name">Имя:</label>
-                <input class="form__input  form__input--text" type="text" placeholder="Барсик" name="name" id="name" required autofocus>
-              </div>
-              <div class="form__item">
-                <label class="form__label  form__label--required" for="weight">Вес (кг):</label>
-                <input class="form__input  form__input--text" type="text" placeholder="7" name="weight" id="weight" required pattern="[,-\.\d]*">
-              </div>
-              <div class="form__item">
-                <label class="form__label" for="age">Возраст (лет):</label>
-                <input class="form__input  form__input--text" type="text" placeholder="7" name="age" id="age" pattern="[,\.\d]*">
-              </div>
-            </div>
+      <main class="page-main">
 
-            <div class="form__section  form__section--right-out">
-              <div class="form__item">
-                <label class="form__label  form__label--radio">
-                  <input class="form__input  form__input--radio" type="radio" name="purpose" value="weight_loss" checked>
-                  <span>Похудение</span>
-                </label>
+        <section class="choice-program">
+          <div class="choice-program__inner">
+
+            <h1 class="choice-program__title  page-main__title">Подбор программы</h1>
+
+            <form class="choice-program__form  form" action="https://echo.htmlacademy.ru" method="post" id="formProgram">
+              <p class="form__text">
+                Заполните анкету и мы подберем программу питания для вашего кота
+              </p>
+
+              <div class="form__up-content">
+                <div class="form__section">
+                  <div class="form__item">
+                    <label class="form__label  form__label--required" for="name">Имя:</label>
+                    <input class="form__input  form__input--text" type="text" placeholder="Барсик" name="name" id="name" required autofocus>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label  form__label--required" for="weight">Вес (кг):</label>
+                    <input class="form__input  form__input--text" type="text" placeholder="7" name="weight" id="weight" required pattern="[,-\.\d]*">
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label" for="age">Возраст (лет):</label>
+                    <input class="form__input  form__input--text" type="text" placeholder="7" name="age" id="age" pattern="[,\.\d]*">
+                  </div>
+                </div>
+
+                <div class="form__section  form__section--right-out">
+                  <div class="form__item">
+                    <label class="form__label  form__label--radio">
+                      <input class="form__input  form__input--radio" type="radio" name="purpose" value="weight_loss" checked>
+                      <span>Похудение</span>
+                    </label>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label  form__label--radio">
+                      <input class="form__input  form__input--radio" type="radio" name="purpose" value="weight_gain">
+                      <span>Набор массы</span>
+                    </label>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label  form__label--radio">
+                      <input class="form__input  form__input--radio" type="radio" name="purpose" value="need_advance">
+                      <span>Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </div>
+                </div>
               </div>
-              <div class="form__item">
-                <label class="form__label  form__label--radio">
-                  <input class="form__input  form__input--radio" type="radio" name="purpose" value="weight_gain">
-                  <span>Набор массы</span>
-                </label>
+
+              <h2 class="form__subtitle  page-main__subtitle"><span>Контактные данные <br>(владельца кота)</span></h2>
+              <div class="form__section  form__section--contact">
+                <div class="form__item  form__item--icons">
+                  <label class="form__label  form__label--required" for="email">E-mail:</label>
+                  <input class="form__input  form__input--email" type="email" placeholder="kuklachev@gmail.com" name="email" id="email" required>
+                  <svg class="form__icon" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"/>
+                  </svg>
+                </div>
+                <div class="form__item  form__item--icons">
+                  <label class="form__label  form__label--required" for="phone">Телефон</label>
+                  <input class="form__input  form__input--tel" type="tel" pattern="[-( )0-9]*"  placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
+                  <svg class="form__icon" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"/>
+                  </svg>
+                </div>
               </div>
-              <div class="form__item">
-                <label class="form__label  form__label--radio">
-                  <input class="form__input  form__input--radio" type="radio" name="purpose" value="need_advance">
-                  <span>Не знаю (Нужен ваш совет)</span>
-                </label>
+              <h2 class="form__subtitle  page-main__subtitle"><span>Комментарий</span></h2>
+              <div class="form__section  form__section--textarea">
+                <div class="form__item">
+                  <textarea class="form__input  form__input--textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+                </div>
               </div>
+              <h2 class="form__subtitle  page-main__subtitle"><span>Дополнительно</span></h2>
+              <div class="form__section  form__section--addition">
+                <div class="form__item">
+                  <label class="form__label  form__label--checkbox">
+                    <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="sugar_substitute" checked>
+                    <span>Сахарозаменитель</span>
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label  form__label--checkbox">
+                    <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="water">
+                    <span>Питьевая вода</span>
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label  form__label--checkbox">
+                    <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="milk">
+                    <span>Молоко</span>
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label  form__label--checkbox">
+                    <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="vitamins">
+                    <span>Витамины</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__footer">
+                <button class="form__btn btn  btn--form" type="submit" id="formSubmit">Отправить заявку</button>
+                <small class="form__note">* — Обязательные поля</small>
+              </div>
+            </form>
+
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__top  page-footer__top--gray">
+        <div class="page-footer__inner">
+
+          <div class="page-footer__contacts  contacts">
+            <div class="contacts__inner">
+              <div class="contacts__slogan">
+                приглашаем к&nbsp;сотрудничеству дилеров!
+              </div>
+              <address class="contacts__address">
+                ул. Большая Конюшенная, д. 19/8
+                <span>Санкт-Петербург</span>
+              </address>
             </div>
           </div>
+        </div>
 
-          <h2 class="form__subtitle  page-main__subtitle"><span>Контактные данные <br>(владельца кота)</span></h2>
-          <div class="form__section  form__section--contact">
-            <div class="form__item  form__item--icons">
-              <label class="form__label  form__label--required" for="email">E-mail:</label>
-              <input class="form__input  form__input--email" type="email" placeholder="kuklachev@gmail.com" name="email" id="email" required>
-              <svg class="form__icon" width="20" height="20">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"/>
-              </svg>
-            </div>
-            <div class="form__item  form__item--icons">
-              <label class="form__label  form__label--required" for="phone">Телефон</label>
-              <input class="form__input  form__input--tel" type="tel" pattern="[-( )0-9]*"  placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
-              <svg class="form__icon" width="20" height="20">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"/>
-              </svg>
-            </div>
-          </div>
-          <h2 class="form__subtitle  page-main__subtitle"><span>Комментарий</span></h2>
-          <div class="form__section  form__section--textarea">
-            <div class="form__item">
-              <textarea class="form__input  form__input--textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
-            </div>
-          </div>
-          <h2 class="form__subtitle  page-main__subtitle"><span>Дополнительно</span></h2>
-          <div class="form__section  form__section--addition">
-            <div class="form__item">
-              <label class="form__label  form__label--checkbox">
-                <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="sugar_substitute" checked>
-                <span>Сахарозаменитель</span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label class="form__label  form__label--checkbox">
-                <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="water">
-                <span>Питьевая вода</span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label class="form__label  form__label--checkbox">
-                <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="milk">
-                <span>Молоко</span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label class="form__label  form__label--checkbox">
-                <input class="form__input  form__input--checkbox" type="checkbox" name="addition" value="vitamins">
-                <span>Витамины</span>
-              </label>
-            </div>
-          </div>
-          <div class="form__footer">
-            <button class="form__btn btn  btn--form" type="submit" id="formSubmit">Отправить заявку</button>
-            <small class="form__note">* — Обязательные поля</small>
-          </div>
-        </form>
-
+        <div class="page-footer__map  map" id="map"></div>
       </div>
-    </section>
 
-  </main>
+      <div class="page-footer__bottom">
+        <div class="page-footer__inner">
 
-</div>
+          <a class="page-footer__logo  logo  logo--footer" href="index.html">
+            <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
+          </a>
 
-<footer class="page-footer">
-  <div class="page-footer__top  page-footer__top--gray">
-    <div class="page-footer__inner">
+          <ul class="page-footer__socials  socials">
+            <li class="socials__item">
+              <a href="https://vk.com/htmlacademy" class="socials__link  socials__link--vk" target="_blank" rel="noopener" title="ВКонтакте">
+                Мы в Вконтакте
+                <svg width="22" height="12">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://www.instagram.com/htmlacademy/" class="socials__link  socials__link--instagram" target="_blank" rel="noopener" title="Инстаграмм">
+                Мы в Инстаграме
+                <svg width="16" height="16">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://www.facebook.com/htmlacademy" class="socials__link  socials__link--facebook" target="_blank" rel="noopener" title="Фейсбук">
+                Мы в Фейсбуке
+                <svg width="10" height="19">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
 
-      <div class="page-footer__contacts  contacts">
-        <div class="contacts__inner">
-          <div class="contacts__slogan">
-            приглашаем к&nbsp;сотрудничеству дилеров!
+          <div class="page-footer__copyright  copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
+              <span>HTML Academy</span>
+              <svg class="copyright__logo" width="30" height="38">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"/>
+              </svg>
+            </a>
           </div>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span>
-          </address>
+
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="page-footer__map  map" id="map"></div>
-  </div>
-
-  <div class="page-footer__bottom">
-    <div class="page-footer__inner">
-
-      <a class="page-footer__logo  logo  logo--footer" href="index.html">
-        <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
-      </a>
-
-      <ul class="page-footer__socials  socials">
-        <li class="socials__item">
-          <a href="https://vk.com/htmlacademy" class="socials__link  socials__link--vk" target="_blank" rel="noopener" title="ВКонтакте">
-            Мы в Вконтакте
-            <svg width="22" height="12">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"/>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="https://www.instagram.com/htmlacademy/" class="socials__link  socials__link--instagram" target="_blank" rel="noopener" title="Инстаграмм">
-            Мы в Инстаграме
-            <svg width="16" height="16">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"/>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="https://www.facebook.com/htmlacademy" class="socials__link  socials__link--facebook" target="_blank" rel="noopener" title="Фейсбук">
-            Мы в Фейсбуке
-            <svg width="10" height="19">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <div class="page-footer__copyright  copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
-          <span>HTML Academy</span>
-          <svg class="copyright__logo" width="30" height="38">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"/>
-          </svg>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</footer>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChYTT0qwE-ULqMVUegfRvMW1rjgdwwIEk&callback=initMap"
-        defer></script>
-<script src="js/scripts.min.js"></script>
-</body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChYTT0qwE-ULqMVUegfRvMW1rjgdwwIEk&callback=initMap"
+            defer></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
 </html>

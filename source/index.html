@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       // Picture element HTML5 shiv
@@ -169,27 +173,29 @@
 
         <section class="example">
           <div class="example__inner">
+
             <div class="example__content">
               <h2 class="example__title  page-main__title" >Живой пример</h2>
               <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
 
-            <div class="example__result  result">
-              <ul class="result__list">
-                <li class="result__item">
-                  <div class="result__value">5 кг</div>
-                  <div class="result__desc">снижение веса</div>
-                </li>
-                <li class="result__item">
-                  <div class="result__value">60 дней</div>
-                  <div class="result__desc">затрачено времени</div>
-                </li>
-              </ul>
-              <div class="result__cost">
-                Затраты на питание: <span class="result__number">15 000 руб.</span>
+              <div class="example__result  result">
+                <ul class="result__list">
+                  <li class="result__item">
+                    <div class="result__value">5 кг</div>
+                    <div class="result__desc">снижение веса</div>
+                  </li>
+                  <li class="result__item">
+                    <div class="result__value">60 дней</div>
+                    <div class="result__desc">затрачено времени</div>
+                  </li>
+                </ul>
+                <div class="result__cost">
+                  Затраты на питание: <span class="result__number">15 000 руб.</span>
+                </div>
               </div>
-            </div>
+
             </div>
 
             <div class="example__slider  slider">
@@ -261,7 +267,6 @@
         </section>
 
       </main>
-
     </div>
 
     <footer class="page-footer">
@@ -279,9 +284,11 @@
               </address>
             </div>
           </div>
+
         </div>
 
         <div class="page-footer__map  map" id="map"></div>
+
       </div>
 
       <div class="page-footer__bottom">
@@ -330,10 +337,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-
-    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChYTT0qwE-ULqMVUegfRvMW1rjgdwwIEk&callback=initMap"
             defer></script>

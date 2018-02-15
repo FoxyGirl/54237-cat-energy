@@ -92,10 +92,10 @@
   }
 
   .proposition__img {
-    width: 709px;
-    height: auto;
     bottom: 0;
     left: 0;
+    width: 709px;
+    height: auto;
 
     img {
       width: 100%;
@@ -108,8 +108,7 @@
     bottom: 0;
     z-index: 1;
     width: 245px;
-    margin: 0;
-    margin-left: 90px;
+    margin: 0 0 0 90px;
     font-size: 20px;
   }
 }
