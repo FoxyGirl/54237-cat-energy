@@ -40,7 +40,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    counter-reset: myCounter;
+    counter-reset: itemCounter;
   }
 
   .advantages__item {
@@ -50,6 +50,12 @@
     min-height: 231px;
     margin-right: 135px;
     margin-bottom: 85px;
+
+    &:first-child {
+      &::before {
+        right: 20px;
+      }
+    }
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -64,14 +70,19 @@
       position: absolute;
       right: 5px;
       top: 0;
-      counter-increment: myCounter;
-      content: counter(myCounter);
+      counter-increment: itemCounter;
+      content: counter(itemCounter);
       color: $color-light-gray;
       font-weight: 400;
       font-size: 280px;
       line-height: 0.7;
       font-family: $ffam-cond;
     }
+  }
+
+
+  .advantages__title {
+    margin-bottom: 60px;
   }
 
   .advantages__text {
@@ -115,6 +126,16 @@
     &:nth-child(3),
     &:nth-child(4) {
       margin-bottom: 0;
+    }
+
+    &:first-child {
+      &::before {
+        right: 15px;
+      }
+    }
+
+    &::before {
+      right: 0;
     }
   }
 }
