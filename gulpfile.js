@@ -55,7 +55,7 @@ gulp.task('svg-clean', function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src(["!source/js/picturefill.min.js", "source/js/*.js"])
+  return gulp.src(["!source/js/picturefill.min.js", "!source/js/script.js","source/js/*.js"])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
@@ -132,7 +132,9 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/picturefill.min.js"
+    "source/js/picturefill.min.js",
+    "source/js/script.js",
+    "source/js/styles.css"
   ], {
     base: "source"
   })
