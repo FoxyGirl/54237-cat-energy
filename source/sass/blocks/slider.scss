@@ -106,9 +106,6 @@
     margin-top: 217px;
     margin-bottom: 0;
     padding-bottom: 60px;
-    //background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-light-gray), color-stop(50%, $color-gray));
-    background-image: gradient(linear, left top, right top, color-stop(50%, $color-light-gray), color-stop(50%, $color-gray));
-    //background-image: linear-gradient(left top, right top, color-stop(50%, $color-light-gray), color-stop(50%, $color-gray));
   }
 
   .slider__content {
@@ -173,7 +170,17 @@
       left: 100%;
       bottom: 0;
       width: calc((100vw - 1300px) / 2);
-      height: 100%;
+      height: calc(100% - 27px);
+      background-color: $color-gray;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 27px;
+      width: 50%;
+      height: calc(100% - 27px);
       background-color: $color-gray;
     }
   }
