@@ -259,6 +259,7 @@
     margin-bottom: 75px;
 
     &--related {
+      flex: 1 0 auto;
       margin-bottom: 0;
     }
   }
@@ -269,7 +270,8 @@
   }
 
   .product__list--related {
-    margin-right: 80px;
+    max-width: 935px;
+    //margin-right: 80px;
     margin-bottom: 0;
 
     .product__wrapper {
