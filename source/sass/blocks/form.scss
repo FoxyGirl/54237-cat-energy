@@ -496,6 +496,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
 
       & + .form__subtitle {
         margin-top: 35px;
@@ -515,13 +516,15 @@
       margin-bottom: 13px;
 
       .form__item {
-        width: 248px;
-
-        &:last-child {
-          width: auto;
-        }
+        flex-grow: 0;
+        width: 245px;
+        margin-right: 80px;
 
         &:nth-child(odd) {
+          margin-right: 80px;
+        }
+
+        &:nth-child(4n) {
           margin-right: 0;
         }
       }
