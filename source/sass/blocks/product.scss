@@ -173,7 +173,7 @@
       }
 
       .product__title {
-        width: 40%;
+        width: 60%;
         margin-bottom: 14px;
         text-align: left;
       }
@@ -276,7 +276,7 @@
     .product__wrapper {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
     }
 
     .product__options {
@@ -316,13 +316,13 @@
     &--related {
       width: 100%;
       margin-right: 0;
-      padding: 15px 0;
+      padding: 16px 0 15px;
       border-right: none;
       border-left: none;
 
       .product__desc {
         margin-top: 8px;
-        align-items: flex-end;
+        align-items: center;
       }
     }
   }
