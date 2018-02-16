@@ -169,7 +169,7 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        margin-bottom: 7px;
+        margin-bottom: 8px;
       }
 
       .product__title {
@@ -281,6 +281,7 @@
 
     .product__options {
       width: 290px;
+      width: 285px;
       margin-right: 40px;
 
       td {
@@ -289,10 +290,17 @@
     }
 
     .product__field {
+      width: 480px;
+      text-align: left;
+    }
+
+    .product__value {
+      width: 65px;
       text-align: left;
     }
 
     .product__title {
+      width: 325px;
       margin-bottom: 0;
     }
 
