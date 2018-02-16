@@ -23,7 +23,7 @@
 
 .form__section {
   position: relative;
-  padding: 15px 0;
+  padding: 16px 0;
 
   &::after {
     content: "";
@@ -49,10 +49,6 @@
     }
   }
 
-  &--right-out {
-    margin-bottom: 30px;
-  }
-
   &--textarea {
     & + .form__subtitle {
       margin-top: 5px;
@@ -75,7 +71,13 @@
       position: absolute;
       right: 15px;
       top: 50%;
+      width: 18px;
+      height: 18px;
       transform: translateY(-50%);
+    }
+
+    .form__label {
+      margin-right: 13px;
     }
   }
 }
@@ -146,12 +148,8 @@
 
   &--tel,
   &--email {
-    padding-right: 42px;
-  }
-
-  &--email {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 42px;
   }
 
   &--textarea {
@@ -241,7 +239,7 @@
 }
 
 .form__btn {
-  margin: 15px auto 20px;
+  margin: 13px auto 20px;
   min-width: 280px;
 }
 
@@ -312,7 +310,7 @@
     }
 
     &--contact {
-      padding-top: 25px;
+      padding-top: 27px;
       padding-bottom: 25px;
 
       & + .form__subtitle {
@@ -322,6 +320,9 @@
     }
 
     &--textarea {
+      padding-top: 36px;
+      padding-bottom: 36px;
+
       & + .form__subtitle {
         margin-top: 20px;
         margin-bottom: 12px;
@@ -350,6 +351,12 @@
   .form__item {
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &--icons {
+      .form__label {
+        margin-right: 20px;
+      }
+    }
   }
 
   .form__input {
@@ -401,6 +408,8 @@
   }
 
   .form__label {
+    margin-right: 20px;
+
     &--radio,
     &--checkbox {
       padding-left: 58px;
@@ -412,7 +421,7 @@
     justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 55px;
-    padding-top: 25px;
+    padding-top: 27px;
   }
 
   .form__note {
@@ -439,7 +448,7 @@
     margin-bottom: 70px;
 
     .form__section {
-      width: 46.5%;
+      width: 46.7%;
       padding-top: 0;
       padding-bottom: 0;
 
@@ -451,7 +460,7 @@
         margin-top: 0;
         margin-bottom: 0;
 
-        &::after {
+        &::before {
           width: 100%;
         }
       }
@@ -496,7 +505,7 @@
         width: 45%;
 
         &--icons {
-          width: 46.5%;
+          width: 570px;
         }
       }
     }
@@ -517,6 +526,24 @@
         }
       }
     }
+  }
+
+  .form__input {
+    &--email,
+    &--tel {
+      width: 485px;
+    }
+  }
+
+  .form__item--icons {
+    .form__icon {
+      right: 19px;
+    }
+  }
+
+  .form__footer {
+    padding-top: 25px;
+    margin-bottom: 59px;
   }
 
   .form__btn {
