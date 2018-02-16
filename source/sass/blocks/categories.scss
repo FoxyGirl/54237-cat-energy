@@ -184,21 +184,29 @@
   .categories__inner {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 
   .categories__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .categories__item {
     width: 570px;
-    margin: 0 40px;
+    margin: 0 40px 40px;
     padding-right: 50px;
 
     &:nth-child(2) {
+      margin-right: 0;
+
       .categories__text {
         padding-right: 0;
       }
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
     }
   }
 
