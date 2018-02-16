@@ -54,10 +54,6 @@
   z-index: 2;
   width: 200px;
   margin: 0 auto;
-
-  input[type="radio"] {
-    display: none;
-  }
 }
 
 .slider__control {
@@ -69,6 +65,10 @@
   border: none;
   outline: none;
   background-color: transparent;
+
+  &:focus {
+    color: $color-main;
+  }
 }
 
 .slider__bar {
