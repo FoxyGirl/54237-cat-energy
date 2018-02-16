@@ -46,7 +46,7 @@
 
 @media (min-width: $bp-xlarge) {
   .example {
-    background-image: linear-gradient(to bottom, $color-light 0, $color-light 210px, $color-light-gray 210px, $color-light-gray 100%);
+    background-image: linear-gradient(to bottom, $color-light 0, $color-light 170px, $color-light-gray 170px, $color-light-gray 100%);
   }
 
   .example__inner {
@@ -62,7 +62,7 @@
   .example__content {
     width: 445px;
     flex-shrink: 0;
-    padding-top: 60px;
+    padding-top: 20px;
   }
 
   .example__text {
