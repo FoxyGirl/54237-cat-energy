@@ -28,11 +28,12 @@
 }
 
 .gift__text {
-  width: 57%;
+  width: 67%;
   margin: 0 auto;
   padding: 0;
   font-weight: normal;
   font-size: 16px;
+  line-height: 1.2;
   font-family: $ffam-base;
   text-align: center;
   color: $color-light;
@@ -69,6 +70,7 @@
 @media (min-width: $bp-xlarge) {
   .gift {
     flex-shrink: 0;
+    justify-content: center;
     width: 245px;
     height: auto;
     margin-bottom: 0;
