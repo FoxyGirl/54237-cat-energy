@@ -161,7 +161,6 @@
   }
 
   &--radio {
-    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -181,7 +180,8 @@
       }
     }
 
-    &:hover + span {
+    &:hover + span,
+    &:focus + span {
       &::before {
         border-color: #cfcfcf;
       }
@@ -202,7 +202,6 @@
   }
 
   &--checkbox {
-    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -221,7 +220,8 @@
       }
     }
 
-    &:hover + span {
+    &:hover + span,
+    &:focus + span {
       &::before {
         border-color: #cfcfcf;
       }
