@@ -494,7 +494,7 @@
   .form__section {
     &--contact {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
 
@@ -503,10 +503,11 @@
       }
 
       .form__item {
-        width: 45%;
+        width: 570px;
+        margin-right: 80px;
 
-        &--icons {
-          width: 570px;
+        &:nth-child(2n) {
+          margin-right: 0;
         }
       }
     }
