@@ -21,6 +21,7 @@ var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
 var mqpacker = require("css-mqpacker");
 var sortCSSmq = require('sort-css-media-queries');
+var fileinclude = require('gulp-file-include');
 
 gulp.task("clean", function() {
   return del("build");
@@ -72,9 +73,16 @@ gulp.task("svg-sprite", function() {
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
+    /*
     .pipe(posthtml([
       include()
     ]))
+    */
+    .pipe(plumber())
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -149,6 +157,6 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("source/**/*.html", ["html"]).on("change", server.reload);
   gulp.watch("source/js/*.js", ["scripts"]).on("change", server.reload);
 });
