@@ -2,7 +2,7 @@
   <button class="main-nav__toggler" type="button" id="navToggler">
     <span>Открыть меню</span>
   </button>
-  <ul class="main-nav__list  @@navMod">
+  <ul class="main-nav__list  @@nav-mod">
     @@if (index === true) {
       @@loop('main-nav__item.html', [
         { "href": "",
@@ -21,7 +21,7 @@
     }
 
     @@if (form === true) {
-        @@loop('main-nav__item.html', [
+      @@loop('main-nav__item.html', [
         { "href": "index.html",
           "text": "Главная",
           "class-active": ""
@@ -44,7 +44,7 @@
           "class-active": ""
         },
         { "href": "catalog.html",
-          "text": "Каталог продукции 22",
+          "text": "Каталог продукции",
           "class-active": "main-nav__link--active"
         },
         { "href": "form.html",

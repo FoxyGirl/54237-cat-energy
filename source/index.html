@@ -23,9 +23,9 @@
     <div class="main-wrap">
 
       <!--
-       header
+       header-->
+      @@include('./blocks/page-header.html', { "index": true, "form": false, "catalog": false, "header-mod": "page-header--promo" })
 
-      -->
       <main class="page-main">
 
         <section class="categories">
@@ -200,7 +200,7 @@
     </div>
 
     @@include('./blocks/footer.html')
-    
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChYTT0qwE-ULqMVUegfRvMW1rjgdwwIEk&callback=initMap"
             defer></script>
     <script src="js/scripts.min.js"></script>

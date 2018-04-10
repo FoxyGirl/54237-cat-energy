@@ -9,13 +9,13 @@
       </picture>
     </a>
     @@if (index === true) {
-      @@include("main-nav.html", { "index": true, "form": false, "catalog": false, "navMod: "main-nav__list--promo" })
+      @@include("main-nav.html", { "index": true, "form": false, "catalog": false, "nav-mod": "main-nav__list--promo" })
     }
     @@if (form === true) {
-      @@include("main-nav.html", { "index": false, "form": true, "catalog": false, "navMod": "" })
+      @@include("main-nav.html", { "index": false, "form": true, "catalog": false, "nav-mod": "" })
     }
     @@if (catalog === true) {
-      @@include("main-nav.html", { "index": false, "form": false, "catalog": true, "navMod": "" })
+      @@include("main-nav.html", { "index": false, "form": false, "catalog": true, "nav-mod": "" })
     }
 
   </div>
