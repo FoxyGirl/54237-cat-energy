@@ -18,39 +18,11 @@
   </head>
   <body>
     <div style="display: none">
-      <include src="build/img/svg-sprite.svg"></include>
+      @@include('./img/svg-sprite.svg')
     </div>
+
     <div class="main-wrap">
-      <header class="page-header">
-        <div class="page-header__inner">
-
-          <a class="page-header__logo  logo  logo--add" title="Кэт энерджи" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
-            </picture>
-          </a>
-
-          <nav class="main-nav  main-nav--no-js" id="mainNav">
-            <button class="main-nav__toggler" type="button" id="navToggler">
-              <span>Открыть меню</span>
-            </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link  main-nav__link--active">Подбор программы</a>
-              </li>
-            </ul>
-          </nav>
-
-        </div>
-      </header>
+      @@include('./blocks/page-header.html', { "index": false, "form": true, "catalog": false, "header-mod": "" })
 
       <main class="page-main">
 
