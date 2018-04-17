@@ -18,13 +18,11 @@
   </head>
   <body>
     <div style="display: none">
-      @@include('./img/svg-sprite.svg')
+      @@include('img/svg-sprite.svg')
     </div>
     <div class="main-wrap">
 
-      <!--
-       header-->
-      @@include('./blocks/page-header.html', { "index": true, "form": false, "catalog": false, "header-mod": "page-header--promo" })
+      @@include('./blocks/page-header/page-header.html', { "index": true, "form": false, "catalog": false, "header-mod": "page-header--promo" })
 
       <main class="page-main">
 
@@ -57,49 +55,7 @@
           </div>
         </section>
 
-        <section class="advantages">
-          <div class="advantages__inner">
-
-            <h2 class="advantages__title  page-main__title">
-              Как это работает
-            </h2>
-            <ol class="advantages__list">
-              <li class="advantages__item">
-                <div class="advantages__img">
-                  <img src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="Польза" width="50" height="50">
-                </div>
-                <p class="advantages__text">
-                  Функциональное питание содержит только полезные питательные вещества.
-                </p>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__img">
-                  <img src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="Форма выпуска" width="50" height="50">
-                </div>
-                <p class="advantages__text">
-                  Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-                </p>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__img">
-                  <img src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" alt="Способ применения" width="50" height="50">
-                </div>
-                <p class="advantages__text">
-                  Замените один-два приема обычной еды на наше фунцкциональное питание.
-                </p>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__img">
-                  <img src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" alt="Время ожидания" width="50" height="50">
-                </div>
-                <p class="advantages__text">
-                  Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-                </p>
-              </li>
-            </ol>
-
-          </div>
-        </section>
+        @@include("./blocks/advantages/advantages.html")
 
         <section class="example">
           <div class="example__inner">
@@ -199,8 +155,7 @@
       </main>
     </div>
 
-    @@include('./blocks/footer.html')
-
+    @@include('./blocks/page-footer/page-footer.html', {"footer-mod": ""})
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChYTT0qwE-ULqMVUegfRvMW1rjgdwwIEk&callback=initMap"
             defer></script>
     <script src="js/scripts.min.js"></script>

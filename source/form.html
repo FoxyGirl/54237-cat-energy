@@ -22,7 +22,7 @@
     </div>
 
     <div class="main-wrap">
-      @@include('./blocks/page-header.html', { "index": false, "form": true, "catalog": false, "header-mod": "" })
+      @@include('./blocks/page-header/page-header.html', { "index": false, "form": true, "catalog": false, "header-mod": "" })
 
       <main class="page-main">
 
@@ -137,72 +137,7 @@
 
     </div>
 
-    <footer class="page-footer">
-      <div class="page-footer__top  page-footer__top--gray">
-        <div class="page-footer__inner">
-
-          <div class="page-footer__contacts  contacts">
-            <div class="contacts__inner">
-              <p class="contacts__slogan">
-                приглашаем к&nbsp;сотрудничеству дилеров!
-              </p>
-              <address class="contacts__address">
-                ул. Большая Конюшенная, д. 19/8
-                <span>Санкт-Петербург</span>
-              </address>
-            </div>
-          </div>
-        </div>
-
-        <div class="page-footer__map  map" id="map"></div>
-      </div>
-
-      <div class="page-footer__bottom">
-        <div class="page-footer__inner">
-
-          <a class="page-footer__logo  logo  logo--footer" href="index.html">
-            <img class="logo__img" src="img/logo-mobile-header.svg" alt="Лого сайта Кэт энерджи" width="110" height="18">
-          </a>
-
-          <ul class="page-footer__socials  socials">
-            <li class="socials__item">
-              <a href="https://vk.com/htmlacademy" class="socials__link  socials__link--vk" target="_blank" rel="noopener" title="ВКонтакте">
-                Мы в Вконтакте
-                <svg width="22" height="12">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"/>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="https://www.instagram.com/htmlacademy/" class="socials__link  socials__link--instagram" target="_blank" rel="noopener" title="Инстаграмм">
-                Мы в Инстаграме
-                <svg width="16" height="16">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"/>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="https://www.facebook.com/htmlacademy" class="socials__link  socials__link--facebook" target="_blank" rel="noopener" title="Фейсбук">
-                Мы в Фейсбуке
-                <svg width="10" height="19">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-          <div class="page-footer__copyright  copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
-              <span>HTML Academy</span>
-              <svg class="copyright__logo" width="30" height="38">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"/>
-              </svg>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </footer>
+    @@include('./blocks/page-footer/page-footer.html', {"footer-mod": "page-footer__top--gray"})
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChYTT0qwE-ULqMVUegfRvMW1rjgdwwIEk&callback=initMap"
             defer></script>

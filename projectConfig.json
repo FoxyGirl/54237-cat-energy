@@ -1,0 +1,20 @@
+{
+  "blocks": {
+    "contacts": [],
+    "footer": [],
+    "page-footer": [],
+    "main-nav": [],
+    "socials": [],
+    "page-header": [],
+    "proposition": [],
+    "map": [],
+    "copyright": [],
+    "advantages": [],
+    "catalog": []
+  },
+  "dirs": {
+    "srcPath": "./source/",
+    "buildPath": "./build/",
+    "blocksDirName": "blocks"
+  }
+}

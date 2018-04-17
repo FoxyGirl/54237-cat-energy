@@ -56,7 +56,7 @@ gulp.task('svg-clean', function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src(["!source/js/picturefill.min.js", "source/js/*.js"])
+  return gulp.src(["!source/js/picturefill.min.js", "source/js/*.js", "source/blocks/**/*.js"])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
@@ -68,7 +68,7 @@ gulp.task("svg-sprite", function() {
       inlineSvg: true
     }))
     .pipe(rename("svg-sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function() {
@@ -127,10 +127,10 @@ gulp.task("style", function() {
 gulp.task("build", function(done) {
   run(
     "clean",
+    "svg-sprite",
     "copy",
     "style",
     "scripts",
-    "svg-sprite",
     "html",
     done
   );
@@ -156,7 +156,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch(["source/sass/**/*.{scss,sass}", "source/blocks/**/*.{scss,sass}"], ["style"]);
   gulp.watch("source/**/*.html", ["html"]).on("change", server.reload);
-  gulp.watch("source/js/*.js", ["scripts"]).on("change", server.reload);
+  gulp.watch(["source/js/*.js", "source/blocks/**/*.js"], ["scripts"]).on("change", server.reload);
 });

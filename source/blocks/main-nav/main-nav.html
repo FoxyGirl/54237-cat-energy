@@ -1,0 +1,59 @@
+    <nav class="main-nav  main-nav--no-js" id="mainNav">
+      <button class="main-nav__toggler" type="button" id="navToggler">
+        <span>Открыть меню</span>
+      </button>
+      <ul class="main-nav__list  @@nav-mod">
+        @@if (index === true) {
+          @@loop('main-nav__item.html', [
+            { "href": "",
+              "text": "Главная",
+              "class-active": "main-nav__link--active"
+            },
+            { "href": "catalog.html",
+              "text": "Каталог продукции",
+              "class-active": ""
+            },
+            { "href": "form.html",
+              "text": "Подбор программы",
+              "class-active": ""
+            }
+          ])
+        }
+
+        @@if (form === true) {
+          @@loop('main-nav__item.html', [
+            { "href": "index.html",
+              "text": "Главная",
+              "class-active": ""
+            },
+            { "href": "catalog.html",
+              "text": "Каталог продукции",
+              "class-active": ""
+            },
+            { "href": "form.html",
+              "text": "Подбор программы",
+              "class-active": "main-nav__link--active"
+            }
+          ])
+        }
+
+        @@if (catalog === true) {
+          @@loop('main-nav__item.html', [
+            { "href": "index.html",
+              "text": "Главная",
+              "class-active": ""
+            },
+            { "href": "catalog.html",
+              "text": "Каталог продукции",
+              "class-active": "main-nav__link--active"
+            },
+            { "href": "form.html",
+              "text": "Подбор программы",
+              "class-active": ""
+            }
+          ])
+        }
+      </ul>
+    </nav>
+
+
